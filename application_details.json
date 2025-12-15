@@ -1,0 +1,211 @@
+{
+  "applications": [
+    {
+      "id": "app-001",
+      "applicationName": "resume-analyzer",
+      "displayName": "Resume Analyzer",
+      "type": "accelerator",
+      "description": "AI-powered resume analysis and candidate matching system",
+      "version": "2.1.0",
+      "status": "active",
+      "owner": "AI Team",
+      "maintainer": "john.doe@company.com",
+      "tags": [
+        "AI",
+        "NLP",
+        "HR",
+        "Analytics"
+      ]
+    },
+    {
+      "id": "app-002",
+      "applicationName": "chatbot",
+      "displayName": "Chat Bot",
+      "type": "bot",
+      "description": "General purpose conversational AI for customer interactions",
+      "version": "1.5.2",
+      "status": "active",
+      "owner": "Bot Team",
+      "maintainer": "jane.smith@company.com",
+      "tags": [
+        "Conversational AI",
+        "Customer Service",
+        "NLP"
+      ]
+    },
+    {
+      "id": "app-003",
+      "applicationName": "supportbot",
+      "displayName": "Support Bot",
+      "type": "bot",
+      "description": "Automated customer support and ticket management system",
+      "version": "1.8.1",
+      "status": "active",
+      "owner": "Support Team",
+      "maintainer": "mike.johnson@company.com",
+      "tags": [
+        "Support",
+        "Automation",
+        "Ticketing"
+      ]
+    },
+    {
+      "id": "app-004",
+      "applicationName": "salesbot",
+      "displayName": "Sales Bot",
+      "type": "bot",
+      "description": "Sales process automation and lead qualification",
+      "version": "0.9.0",
+      "status": "development",
+      "owner": "Sales Team",
+      "maintainer": "sarah.wilson@company.com",
+      "tags": [
+        "Sales",
+        "CRM",
+        "Lead Generation"
+      ]
+    },
+    {
+      "id": "app-005",
+      "applicationName": "faqbot",
+      "displayName": "FAQ Bot",
+      "type": "bot",
+      "description": "Intelligent FAQ system with natural language processing",
+      "version": "1.3.0",
+      "status": "active",
+      "owner": "Knowledge Team",
+      "maintainer": "alex.brown@company.com",
+      "tags": [
+        "FAQ",
+        "Knowledge Base",
+        "Self-Service"
+      ]
+    },
+    {
+      "id": "app-006",
+      "applicationName": "voicebot",
+      "displayName": "Voice Bot",
+      "type": "bot",
+      "description": "Voice-enabled AI assistant with speech recognition",
+      "version": "1.0.0-beta",
+      "status": "beta",
+      "owner": "Voice Team",
+      "maintainer": "emma.davis@company.com",
+      "tags": [
+        "Voice AI",
+        "Speech Recognition",
+        "IVR"
+      ]
+    },
+    {
+      "id": "app-007",
+      "applicationName": "aiassistant",
+      "displayName": "AI Assistant",
+      "type": "bot",
+      "description": "Advanced AI assistant with multi-modal capabilities",
+      "version": "2.0.1",
+      "status": "active",
+      "owner": "AI Team",
+      "maintainer": "david.lee@company.com",
+      "tags": [
+        "AI Assistant",
+        "Multi-modal",
+        "Advanced AI"
+      ]
+    },
+    {
+      "id": "app-008",
+      "applicationName": "l2technical",
+      "displayName": "L2 Technical",
+      "type": "accelerator",
+      "description": "Level 2 technical support automation platform",
+      "version": "1.6.0",
+      "status": "active",
+      "owner": "Technical Team",
+      "maintainer": "chris.taylor@company.com",
+      "tags": [
+        "Technical Support",
+        "Automation",
+        "L2"
+      ]
+    },
+    {
+      "id": "app-009",
+      "applicationName": "tagaccelerator",
+      "displayName": "TAG Accelerator",
+      "type": "accelerator",
+      "description": "Event-driven processing and analytics accelerator",
+      "version": "1.4.2",
+      "status": "active",
+      "owner": "Platform Team",
+      "maintainer": "lisa.garcia@company.com",
+      "tags": [
+        "Event Processing",
+        "Analytics",
+        "Real-time"
+      ]
+    },
+    {
+      "id": "app-010",
+      "applicationName": "analyticsengine",
+      "displayName": "Analytics Engine",
+      "type": "accelerator",
+      "description": "Comprehensive data analytics and business intelligence platform",
+      "version": "2.2.0",
+      "status": "active",
+      "owner": "Analytics Team",
+      "maintainer": "robert.martinez@company.com",
+      "tags": [
+        "Analytics",
+        "BI",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "app-011",
+      "applicationName": "workflowautomation",
+      "displayName": "Workflow Automation",
+      "type": "accelerator",
+      "description": "Business process automation and workflow orchestration",
+      "version": "1.1.0-beta",
+      "status": "beta",
+      "owner": "Automation Team",
+      "maintainer": "jennifer.clark@company.com",
+      "tags": [
+        "Workflow",
+        "Automation",
+        "BPM"
+      ]
+    },
+    {
+      "id": "app-012",
+      "applicationName": "integrationhub",
+      "displayName": "Integration Hub",
+      "type": "accelerator",
+      "description": "API management and service integration platform",
+      "version": "0.8.0",
+      "status": "development",
+      "owner": "Integration Team",
+      "maintainer": "kevin.rodriguez@company.com",
+      "tags": [
+        "API Management",
+        "Integration",
+        "Microservices"
+      ]
+    },
+    {
+      "id": "app-013",
+      "applicationName": "string",
+      "displayName": "string",
+      "type": "string",
+      "description": "string",
+      "version": "string",
+      "status": "string",
+      "owner": "string",
+      "maintainer": "string",
+      "tags": [
+        "string"
+      ]
+    }
+  ]
+}

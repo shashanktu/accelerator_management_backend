@@ -1,0 +1,256 @@
+{
+  "applications": [
+    {
+      "id": "app-001",
+      "applicationName": "resume-analyzer",
+      "repositoryUrl": "https://github.com/org/resume-analyzer",
+      "cicdPipeline": {
+        "provider": "Azure DevOps",
+        "buildPipeline": "resume-analyzer-build",
+        "releasePipeline": "resume-analyzer-release",
+        "deploymentStrategy": "blue-green"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "85%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "f3a1f701-305b-45a7-abba-39325ee0797b",
+        "logAnalytics": "workspace-12345",
+        "alerts": ["high-cpu", "memory-leak", "error-rate"]
+      }
+    },
+    {
+      "id": "app-002",
+      "applicationName": "chatbot",
+      "repositoryUrl": "https://github.com/org/chatbot",
+      "cicdPipeline": {
+        "provider": "GitHub Actions",
+        "buildPipeline": "chatbot-ci",
+        "releasePipeline": "chatbot-cd",
+        "deploymentStrategy": "rolling"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "78%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "a2b3c4d5-e6f7-8901-2345-6789abcdef01",
+        "logAnalytics": "workspace-67890",
+        "alerts": ["response-time", "error-rate"]
+      }
+    },
+    {
+      "id": "app-003",
+      "applicationName": "supportbot",
+      "repositoryUrl": "https://github.com/org/support-bot",
+      "cicdPipeline": {
+        "provider": "Azure DevOps",
+        "buildPipeline": "supportbot-build",
+        "releasePipeline": "supportbot-release",
+        "deploymentStrategy": "canary"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "82%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "b3c4d5e6-f7g8-9012-3456-789abcdef012",
+        "logAnalytics": "workspace-11111",
+        "alerts": ["ticket-volume", "resolution-time"]
+      }
+    },
+    {
+      "id": "app-004",
+      "applicationName": "salesbot",
+      "repositoryUrl": "https://github.com/org/sales-bot",
+      "cicdPipeline": {
+        "provider": "Jenkins",
+        "buildPipeline": "salesbot-build",
+        "releasePipeline": "salesbot-deploy",
+        "deploymentStrategy": "recreate"
+      },
+      "codeQuality": {
+        "sonarQube": "disabled",
+        "codeCoverage": "65%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "c4d5e6f7-g8h9-0123-4567-89abcdef0123",
+        "logAnalytics": "workspace-22222",
+        "alerts": ["lead-conversion"]
+      }
+    },
+    {
+      "id": "app-005",
+      "applicationName": "faqbot",
+      "repositoryUrl": "https://github.com/org/faq-bot",
+      "cicdPipeline": {
+        "provider": "GitLab CI",
+        "buildPipeline": "faqbot-pipeline",
+        "releasePipeline": "faqbot-deploy",
+        "deploymentStrategy": "rolling"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "90%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "d5e6f7g8-h9i0-1234-5678-9abcdef01234",
+        "logAnalytics": "workspace-33333",
+        "alerts": ["query-accuracy", "response-time"]
+      }
+    },
+    {
+      "id": "app-006",
+      "applicationName": "voicebot",
+      "repositoryUrl": "https://github.com/org/voice-bot",
+      "cicdPipeline": {
+        "provider": "Azure DevOps",
+        "buildPipeline": "voicebot-build",
+        "releasePipeline": "voicebot-release",
+        "deploymentStrategy": "blue-green"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "72%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "e6f7g8h9-i0j1-2345-6789-abcdef012345",
+        "logAnalytics": "workspace-44444",
+        "alerts": ["speech-accuracy", "latency"]
+      }
+    },
+    {
+      "id": "app-007",
+      "applicationName": "aiassistant",
+      "repositoryUrl": "https://github.com/org/ai-assistant",
+      "cicdPipeline": {
+        "provider": "Azure DevOps",
+        "buildPipeline": "aiassistant-build",
+        "releasePipeline": "aiassistant-release",
+        "deploymentStrategy": "blue-green"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "88%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "f7g8h9i0-j1k2-3456-7890-bcdef0123456",
+        "logAnalytics": "workspace-55555",
+        "alerts": ["ai-accuracy", "response-time", "token-usage"]
+      }
+    },
+    {
+      "id": "app-008",
+      "applicationName": "l2technical",
+      "repositoryUrl": "https://github.com/org/l2-technical",
+      "cicdPipeline": {
+        "provider": "GitLab CI",
+        "buildPipeline": "l2technical-pipeline",
+        "releasePipeline": "l2technical-deploy",
+        "deploymentStrategy": "canary"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "80%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "g8h9i0j1-k2l3-4567-8901-cdef01234567",
+        "logAnalytics": "workspace-66666",
+        "alerts": ["incident-resolution", "escalation-rate"]
+      }
+    },
+    {
+      "id": "app-009",
+      "applicationName": "tagaccelerator",
+      "repositoryUrl": "https://github.com/org/tag-accelerator",
+      "cicdPipeline": {
+        "provider": "Azure DevOps",
+        "buildPipeline": "tagaccelerator-build",
+        "releasePipeline": "tagaccelerator-release",
+        "deploymentStrategy": "rolling"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "75%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "h9i0j1k2-l3m4-5678-9012-def012345678",
+        "logAnalytics": "workspace-77777",
+        "alerts": ["event-throughput", "processing-latency"]
+      }
+    },
+    {
+      "id": "app-010",
+      "applicationName": "analyticsengine",
+      "repositoryUrl": "https://github.com/org/analytics-engine",
+      "cicdPipeline": {
+        "provider": "GitHub Actions",
+        "buildPipeline": "analytics-ci",
+        "releasePipeline": "analytics-cd",
+        "deploymentStrategy": "blue-green"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "92%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "i0j1k2l3-m4n5-6789-0123-ef0123456789",
+        "logAnalytics": "workspace-88888",
+        "alerts": ["data-quality", "pipeline-failures", "query-performance"]
+      }
+    },
+    {
+      "id": "app-011",
+      "applicationName": "workflowautomation",
+      "repositoryUrl": "https://github.com/org/workflow-automation",
+      "cicdPipeline": {
+        "provider": "Jenkins",
+        "buildPipeline": "workflow-build",
+        "releasePipeline": "workflow-deploy",
+        "deploymentStrategy": "recreate"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "70%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "j1k2l3m4-n5o6-7890-1234-f01234567890",
+        "logAnalytics": "workspace-99999",
+        "alerts": ["workflow-failures", "execution-time"]
+      }
+    },
+    {
+      "id": "app-012",
+      "applicationName": "integrationhub",
+      "repositoryUrl": "https://github.com/org/integration-hub",
+      "cicdPipeline": {
+        "provider": "Azure DevOps",
+        "buildPipeline": "integration-build",
+        "releasePipeline": "integration-release",
+        "deploymentStrategy": "canary"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "68%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "k2l3m4n5-o6p7-8901-2345-012345678901",
+        "logAnalytics": "workspace-00000",
+        "alerts": ["api-latency", "integration-failures"]
+      }
+    }
+  ]
+}
