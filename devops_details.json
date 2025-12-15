@@ -3,8 +3,8 @@
     {
       "id": "app-001",
       "applicationName": "resume-analyzer",
-      "repositoryUrl": "https://github.com/CloudTSC/ResumeAnalyzer",
       "cicdPipeline": {
+        "repositoryUrl": "https://github.com/CloudTSC/ResumeAnalyzer",
         "provider": "Azure DevOps",
         "buildPipeline": "resume-analyzer-build",
         "buildPipelineUrl": "https://dev.azure.com/CloudTSC/ResumeAnalyzer/_build",
@@ -26,8 +26,8 @@
     {
       "id": "app-002",
       "applicationName": "chatbot",
-      "repositoryUrl": "https://github.com/org/chatbot",
       "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/chatbot",
         "provider": "GitHub Actions",
         "buildPipeline": "chatbot-ci",
         "buildPipelineUrl": "https://github.com/org/chatbot/actions",
@@ -49,8 +49,8 @@
     {
       "id": "app-003",
       "applicationName": "supportbot",
-      "repositoryUrl": "https://github.com/org/support-bot",
       "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/support-bot",
         "provider": "Azure DevOps",
         "buildPipeline": "supportbot-build",
         "buildPipelineUrl": "https://dev.azure.com/org/support-bot/_build",
@@ -72,8 +72,8 @@
     {
       "id": "app-004",
       "applicationName": "salesbot",
-      "repositoryUrl": "https://github.com/org/sales-bot",
       "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/sales-bot",
         "provider": "Jenkins",
         "buildPipeline": "salesbot-build",
         "buildPipelineUrl": "https://jenkins.org/job/salesbot-build",
@@ -95,8 +95,8 @@
     {
       "id": "app-005",
       "applicationName": "faqbot",
-      "repositoryUrl": "https://github.com/org/faq-bot",
       "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/faq-bot",
         "provider": "GitLab CI",
         "buildPipeline": "faqbot-pipeline",
         "buildPipelineUrl": "https://gitlab.com/org/faq-bot/-/pipelines",
@@ -118,8 +118,8 @@
     {
       "id": "app-006",
       "applicationName": "voicebot",
-      "repositoryUrl": "https://github.com/org/voice-bot",
       "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/voice-bot",
         "provider": "Azure DevOps",
         "buildPipeline": "voicebot-build",
         "buildPipelineUrl": "https://dev.azure.com/org/voice-bot/_build",
@@ -141,8 +141,8 @@
     {
       "id": "app-007",
       "applicationName": "aiassistant",
-      "repositoryUrl": "https://github.com/org/ai-assistant",
       "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/ai-assistant",
         "provider": "Azure DevOps",
         "buildPipeline": "aiassistant-build",
         "buildPipelineUrl": "https://dev.azure.com/org/ai-assistant/_build",
@@ -164,8 +164,8 @@
     {
       "id": "app-008",
       "applicationName": "l2technical",
-      "repositoryUrl": "https://github.com/org/l2-technical",
       "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/l2-technical",
         "provider": "GitLab CI",
         "buildPipeline": "l2technical-pipeline",
         "buildPipelineUrl": "https://gitlab.com/org/l2-technical/-/pipelines",
@@ -187,8 +187,8 @@
     {
       "id": "app-009",
       "applicationName": "tagaccelerator",
-      "repositoryUrl": "https://github.com/org/tag-accelerator",
       "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/tag-accelerator",
         "provider": "Azure DevOps",
         "buildPipeline": "tagaccelerator-build",
         "buildPipelineUrl": "https://dev.azure.com/org/tag-accelerator/_build",
@@ -210,8 +210,8 @@
     {
       "id": "app-010",
       "applicationName": "analyticsengine",
-      "repositoryUrl": "https://github.com/org/analytics-engine",
       "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/analytics-engine",
         "provider": "GitHub Actions",
         "buildPipeline": "analytics-ci",
         "buildPipelineUrl": "https://github.com/org/analytics-engine/actions",
@@ -233,8 +233,8 @@
     {
       "id": "app-011",
       "applicationName": "workflowautomation",
-      "repositoryUrl": "https://github.com/org/workflow-automation",
       "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/workflow-automation",
         "provider": "Jenkins",
         "buildPipeline": "workflow-build",
         "buildPipelineUrl": "https://jenkins.org/job/workflow-build",
@@ -256,8 +256,8 @@
     {
       "id": "app-012",
       "applicationName": "integrationhub",
-      "repositoryUrl": "https://github.com/org/integration-hub",
       "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/integration-hub",
         "provider": "Azure DevOps",
         "buildPipeline": "integration-build",
         "buildPipelineUrl": "https://dev.azure.com/org/integration-hub/_build",
