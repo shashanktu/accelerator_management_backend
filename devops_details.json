@@ -3,15 +3,17 @@
     {
       "id": "app-001",
       "applicationName": "resume-analyzer",
-      "repositoryUrl": "https://github.com/org/resume-analyzer",
+      "repositoryUrl": "https://github.com/CloudTSC/ResumeAnalyzer",
       "cicdPipeline": {
         "provider": "Azure DevOps",
         "buildPipeline": "resume-analyzer-build",
+        "buildPipelineUrl": "https://dev.azure.com/CloudTSC/ResumeAnalyzer/_build",
         "releasePipeline": "resume-analyzer-release",
+        "releasePipelineUrl": "https://dev.azure.com/CloudTSC/ResumeAnalyzer/_release",
         "deploymentStrategy": "blue-green"
       },
       "codeQuality": {
-        "sonarQube": "enabled",
+        "sonarQube": "disabled",
         "codeCoverage": "85%",
         "securityScan": "enabled"
       },
@@ -28,11 +30,13 @@
       "cicdPipeline": {
         "provider": "GitHub Actions",
         "buildPipeline": "chatbot-ci",
+        "buildPipelineUrl": "https://github.com/org/chatbot/actions",
         "releasePipeline": "chatbot-cd",
+        "releasePipelineUrl": "https://github.com/org/chatbot/actions",
         "deploymentStrategy": "rolling"
       },
       "codeQuality": {
-        "sonarQube": "enabled",
+        "sonarQube": "disabled",
         "codeCoverage": "78%",
         "securityScan": "enabled"
       },
@@ -49,11 +53,13 @@
       "cicdPipeline": {
         "provider": "Azure DevOps",
         "buildPipeline": "supportbot-build",
+        "buildPipelineUrl": "https://dev.azure.com/org/support-bot/_build",
         "releasePipeline": "supportbot-release",
+        "releasePipelineUrl": "https://dev.azure.com/org/support-bot/_release",
         "deploymentStrategy": "canary"
       },
       "codeQuality": {
-        "sonarQube": "enabled",
+        "sonarQube": "disabled",
         "codeCoverage": "82%",
         "securityScan": "enabled"
       },
@@ -70,7 +76,9 @@
       "cicdPipeline": {
         "provider": "Jenkins",
         "buildPipeline": "salesbot-build",
+        "buildPipelineUrl": "https://jenkins.org/job/salesbot-build",
         "releasePipeline": "salesbot-deploy",
+        "releasePipelineUrl": "https://jenkins.org/job/salesbot-deploy",
         "deploymentStrategy": "recreate"
       },
       "codeQuality": {
@@ -91,11 +99,13 @@
       "cicdPipeline": {
         "provider": "GitLab CI",
         "buildPipeline": "faqbot-pipeline",
+        "buildPipelineUrl": "https://gitlab.com/org/faq-bot/-/pipelines",
         "releasePipeline": "faqbot-deploy",
+        "releasePipelineUrl": "https://gitlab.com/org/faq-bot/-/pipelines",
         "deploymentStrategy": "rolling"
       },
       "codeQuality": {
-        "sonarQube": "enabled",
+        "sonarQube": "disabled",
         "codeCoverage": "90%",
         "securityScan": "enabled"
       },
@@ -112,11 +122,13 @@
       "cicdPipeline": {
         "provider": "Azure DevOps",
         "buildPipeline": "voicebot-build",
+        "buildPipelineUrl": "https://dev.azure.com/org/voice-bot/_build",
         "releasePipeline": "voicebot-release",
+        "releasePipelineUrl": "https://dev.azure.com/org/voice-bot/_release",
         "deploymentStrategy": "blue-green"
       },
       "codeQuality": {
-        "sonarQube": "enabled",
+        "sonarQube": "disabled",
         "codeCoverage": "72%",
         "securityScan": "enabled"
       },
@@ -133,11 +145,13 @@
       "cicdPipeline": {
         "provider": "Azure DevOps",
         "buildPipeline": "aiassistant-build",
+        "buildPipelineUrl": "https://dev.azure.com/org/ai-assistant/_build",
         "releasePipeline": "aiassistant-release",
+        "releasePipelineUrl": "https://dev.azure.com/org/ai-assistant/_release",
         "deploymentStrategy": "blue-green"
       },
       "codeQuality": {
-        "sonarQube": "enabled",
+        "sonarQube": "disabled",
         "codeCoverage": "88%",
         "securityScan": "enabled"
       },
@@ -154,11 +168,13 @@
       "cicdPipeline": {
         "provider": "GitLab CI",
         "buildPipeline": "l2technical-pipeline",
+        "buildPipelineUrl": "https://gitlab.com/org/l2-technical/-/pipelines",
         "releasePipeline": "l2technical-deploy",
+        "releasePipelineUrl": "https://gitlab.com/org/l2-technical/-/pipelines",
         "deploymentStrategy": "canary"
       },
       "codeQuality": {
-        "sonarQube": "enabled",
+        "sonarQube": "disabled",
         "codeCoverage": "80%",
         "securityScan": "enabled"
       },
@@ -175,11 +191,13 @@
       "cicdPipeline": {
         "provider": "Azure DevOps",
         "buildPipeline": "tagaccelerator-build",
+        "buildPipelineUrl": "https://dev.azure.com/org/tag-accelerator/_build",
         "releasePipeline": "tagaccelerator-release",
+        "releasePipelineUrl": "https://dev.azure.com/org/tag-accelerator/_release",
         "deploymentStrategy": "rolling"
       },
       "codeQuality": {
-        "sonarQube": "enabled",
+        "sonarQube": "disabled",
         "codeCoverage": "75%",
         "securityScan": "enabled"
       },
@@ -196,11 +214,13 @@
       "cicdPipeline": {
         "provider": "GitHub Actions",
         "buildPipeline": "analytics-ci",
+        "buildPipelineUrl": "https://github.com/org/analytics-engine/actions",
         "releasePipeline": "analytics-cd",
+        "releasePipelineUrl": "https://github.com/org/analytics-engine/actions",
         "deploymentStrategy": "blue-green"
       },
       "codeQuality": {
-        "sonarQube": "enabled",
+        "sonarQube": "disabled",
         "codeCoverage": "92%",
         "securityScan": "enabled"
       },
@@ -217,11 +237,13 @@
       "cicdPipeline": {
         "provider": "Jenkins",
         "buildPipeline": "workflow-build",
+        "buildPipelineUrl": "https://jenkins.org/job/workflow-build",
         "releasePipeline": "workflow-deploy",
+        "releasePipelineUrl": "https://jenkins.org/job/workflow-deploy",
         "deploymentStrategy": "recreate"
       },
       "codeQuality": {
-        "sonarQube": "enabled",
+        "sonarQube": "disabled",
         "codeCoverage": "70%",
         "securityScan": "enabled"
       },
@@ -238,11 +260,13 @@
       "cicdPipeline": {
         "provider": "Azure DevOps",
         "buildPipeline": "integration-build",
+        "buildPipelineUrl": "https://dev.azure.com/org/integration-hub/_build",
         "releasePipeline": "integration-release",
+        "releasePipelineUrl": "https://dev.azure.com/org/integration-hub/_release",
         "deploymentStrategy": "canary"
       },
       "codeQuality": {
-        "sonarQube": "enabled",
+        "sonarQube": "disabled",
         "codeCoverage": "68%",
         "securityScan": "enabled"
       },
