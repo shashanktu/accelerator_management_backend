@@ -330,7 +330,7 @@ def onboard_application_details(application_name: str, devops_request: DevOpsReq
 #     return data["applications"]
 
 # Get infrastructure details by app name/ID across all environments
-@app.get("/infrastructure/app/{identifier}")
+@app.get("/infrastructure/{identifier}")
 def get_app_infrastructure_all_environments(identifier: str):
     data = load_json_file("infrastructure_details.json")
     result = {}
