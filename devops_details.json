@@ -2,278 +2,232 @@
   "applications": [
     {
       "id": "app-001",
-      "applicationName": "resume-analyzer",
+      "applicationName": "ado-to-github-accelerator",
       "cicdPipeline": {
-        "repositoryUrl": "https://github.com/CloudTSC/ResumeAnalyzer",
-        "provider": "Azure DevOps",
-        "buildPipeline": "resume-analyzer-build",
-        "buildPipelineUrl": "https://dev.azure.com/CloudTSC/ResumeAnalyzer/_build",
-        "releasePipeline": "resume-analyzer-release",
-        "releasePipelineUrl": "https://dev.azure.com/CloudTSC/ResumeAnalyzer/_release",
-        "deploymentStrategy": "blue-green"
-      },
-      "codeQuality": {
-        "sonarQube": "disabled",
-        "codeCoverage": "85%",
-        "securityScan": "enabled"
-      },
-      "monitoring": {
-        "applicationInsights": "f3a1f701-305b-45a7-abba-39325ee0797b",
-        "logAnalytics": "workspace-12345",
-        "alerts": ["high-cpu", "memory-leak", "error-rate"]
-      }
-    },
-    {
-      "id": "app-002",
-      "applicationName": "chatbot",
-      "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/chatbot",
+        "repositoryUrl": "https://github.com/org/ado-to-github-accelerator",
         "provider": "GitHub Actions",
-        "buildPipeline": "chatbot-ci",
-        "buildPipelineUrl": "https://github.com/org/chatbot/actions",
-        "releasePipeline": "chatbot-cd",
-        "releasePipelineUrl": "https://github.com/org/chatbot/actions",
-        "deploymentStrategy": "rolling"
-      },
-      "codeQuality": {
-        "sonarQube": "disabled",
-        "codeCoverage": "78%",
-        "securityScan": "enabled"
-      },
-      "monitoring": {
-        "applicationInsights": "a2b3c4d5-e6f7-8901-2345-6789abcdef01",
-        "logAnalytics": "workspace-67890",
-        "alerts": ["response-time", "error-rate"]
-      }
-    },
-    {
-      "id": "app-003",
-      "applicationName": "supportbot",
-      "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/support-bot",
-        "provider": "Azure DevOps",
-        "buildPipeline": "supportbot-build",
-        "buildPipelineUrl": "https://dev.azure.com/org/support-bot/_build",
-        "releasePipeline": "supportbot-release",
-        "releasePipelineUrl": "https://dev.azure.com/org/support-bot/_release",
-        "deploymentStrategy": "canary"
-      },
-      "codeQuality": {
-        "sonarQube": "disabled",
-        "codeCoverage": "82%",
-        "securityScan": "enabled"
-      },
-      "monitoring": {
-        "applicationInsights": "b3c4d5e6-f7g8-9012-3456-789abcdef012",
-        "logAnalytics": "workspace-11111",
-        "alerts": ["ticket-volume", "resolution-time"]
-      }
-    },
-    {
-      "id": "app-004",
-      "applicationName": "salesbot",
-      "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/sales-bot",
-        "provider": "Jenkins",
-        "buildPipeline": "salesbot-build",
-        "buildPipelineUrl": "https://jenkins.org/job/salesbot-build",
-        "releasePipeline": "salesbot-deploy",
-        "releasePipelineUrl": "https://jenkins.org/job/salesbot-deploy",
-        "deploymentStrategy": "recreate"
-      },
-      "codeQuality": {
-        "sonarQube": "disabled",
-        "codeCoverage": "65%",
-        "securityScan": "enabled"
-      },
-      "monitoring": {
-        "applicationInsights": "c4d5e6f7-g8h9-0123-4567-89abcdef0123",
-        "logAnalytics": "workspace-22222",
-        "alerts": ["lead-conversion"]
-      }
-    },
-    {
-      "id": "app-005",
-      "applicationName": "faqbot",
-      "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/faq-bot",
-        "provider": "GitLab CI",
-        "buildPipeline": "faqbot-pipeline",
-        "buildPipelineUrl": "https://gitlab.com/org/faq-bot/-/pipelines",
-        "releasePipeline": "faqbot-deploy",
-        "releasePipelineUrl": "https://gitlab.com/org/faq-bot/-/pipelines",
-        "deploymentStrategy": "rolling"
-      },
-      "codeQuality": {
-        "sonarQube": "disabled",
-        "codeCoverage": "90%",
-        "securityScan": "enabled"
-      },
-      "monitoring": {
-        "applicationInsights": "d5e6f7g8-h9i0-1234-5678-9abcdef01234",
-        "logAnalytics": "workspace-33333",
-        "alerts": ["query-accuracy", "response-time"]
-      }
-    },
-    {
-      "id": "app-006",
-      "applicationName": "voicebot",
-      "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/voice-bot",
-        "provider": "Azure DevOps",
-        "buildPipeline": "voicebot-build",
-        "buildPipelineUrl": "https://dev.azure.com/org/voice-bot/_build",
-        "releasePipeline": "voicebot-release",
-        "releasePipelineUrl": "https://dev.azure.com/org/voice-bot/_release",
+        "buildPipeline": "ado-github-ci",
+        "buildPipelineUrl": "https://github.com/org/ado-to-github-accelerator/actions",
+        "releasePipeline": "ado-github-cd",
+        "releasePipelineUrl": "https://github.com/org/ado-to-github-accelerator/actions",
         "deploymentStrategy": "blue-green"
       },
       "codeQuality": {
-        "sonarQube": "disabled",
-        "codeCoverage": "72%",
-        "securityScan": "enabled"
-      },
-      "monitoring": {
-        "applicationInsights": "e6f7g8h9-i0j1-2345-6789-abcdef012345",
-        "logAnalytics": "workspace-44444",
-        "alerts": ["speech-accuracy", "latency"]
-      }
-    },
-    {
-      "id": "app-007",
-      "applicationName": "aiassistant",
-      "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/ai-assistant",
-        "provider": "Azure DevOps",
-        "buildPipeline": "aiassistant-build",
-        "buildPipelineUrl": "https://dev.azure.com/org/ai-assistant/_build",
-        "releasePipeline": "aiassistant-release",
-        "releasePipelineUrl": "https://dev.azure.com/org/ai-assistant/_release",
-        "deploymentStrategy": "blue-green"
-      },
-      "codeQuality": {
-        "sonarQube": "disabled",
+        "sonarQube": "enabled",
         "codeCoverage": "88%",
         "securityScan": "enabled"
       },
       "monitoring": {
-        "applicationInsights": "f7g8h9i0-j1k2-3456-7890-bcdef0123456",
-        "logAnalytics": "workspace-55555",
-        "alerts": ["ai-accuracy", "response-time", "token-usage"]
+        "applicationInsights": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+        "logAnalytics": "workspace-ado-github",
+        "alerts": ["migration-status", "error-rate"]
       }
     },
     {
-      "id": "app-008",
-      "applicationName": "l2technical",
+      "id": "app-002",
+      "applicationName": "environment-provisioning-bot",
       "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/l2-technical",
-        "provider": "GitLab CI",
-        "buildPipeline": "l2technical-pipeline",
-        "buildPipelineUrl": "https://gitlab.com/org/l2-technical/-/pipelines",
-        "releasePipeline": "l2technical-deploy",
-        "releasePipelineUrl": "https://gitlab.com/org/l2-technical/-/pipelines",
-        "deploymentStrategy": "canary"
-      },
-      "codeQuality": {
-        "sonarQube": "disabled",
-        "codeCoverage": "80%",
-        "securityScan": "enabled"
-      },
-      "monitoring": {
-        "applicationInsights": "g8h9i0j1-k2l3-4567-8901-cdef01234567",
-        "logAnalytics": "workspace-66666",
-        "alerts": ["incident-resolution", "escalation-rate"]
-      }
-    },
-    {
-      "id": "app-009",
-      "applicationName": "tagaccelerator",
-      "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/tag-accelerator",
+        "repositoryUrl": "https://github.com/org/environment-provisioning-bot",
         "provider": "Azure DevOps",
-        "buildPipeline": "tagaccelerator-build",
-        "buildPipelineUrl": "https://dev.azure.com/org/tag-accelerator/_build",
-        "releasePipeline": "tagaccelerator-release",
-        "releasePipelineUrl": "https://dev.azure.com/org/tag-accelerator/_release",
+        "buildPipeline": "env-provisioning-build",
+        "buildPipelineUrl": "https://dev.azure.com/org/environment-provisioning-bot/_build",
+        "releasePipeline": "env-provisioning-release",
+        "releasePipelineUrl": "https://dev.azure.com/org/environment-provisioning-bot/_release",
         "deploymentStrategy": "rolling"
       },
       "codeQuality": {
-        "sonarQube": "disabled",
-        "codeCoverage": "75%",
+        "sonarQube": "enabled",
+        "codeCoverage": "82%",
         "securityScan": "enabled"
       },
       "monitoring": {
-        "applicationInsights": "h9i0j1k2-l3m4-5678-9012-def012345678",
-        "logAnalytics": "workspace-77777",
-        "alerts": ["event-throughput", "processing-latency"]
+        "applicationInsights": "b2c3d4e5-f6g7-8901-2345-678901bcdefg",
+        "logAnalytics": "workspace-env-prov",
+        "alerts": ["provisioning-time", "resource-usage"]
       }
     },
     {
-      "id": "app-010",
-      "applicationName": "analyticsengine",
+      "id": "app-003",
+      "applicationName": "diagnostics-bot",
       "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/analytics-engine",
+        "repositoryUrl": "https://github.com/org/diagnostics-bot",
         "provider": "GitHub Actions",
-        "buildPipeline": "analytics-ci",
-        "buildPipelineUrl": "https://github.com/org/analytics-engine/actions",
-        "releasePipeline": "analytics-cd",
-        "releasePipelineUrl": "https://github.com/org/analytics-engine/actions",
+        "buildPipeline": "diagnostics-ci",
+        "buildPipelineUrl": "https://github.com/org/diagnostics-bot/actions",
+        "releasePipeline": "diagnostics-cd",
+        "releasePipelineUrl": "https://github.com/org/diagnostics-bot/actions",
+        "deploymentStrategy": "canary"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "85%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "c3d4e5f6-g7h8-9012-3456-789012cdefgh",
+        "logAnalytics": "workspace-diagnostics",
+        "alerts": ["diagnostic-accuracy", "response-time"]
+      }
+    },
+    {
+      "id": "app-004",
+      "applicationName": "tsc-weeklybyte-rss",
+      "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/tsc-weeklybyte-rss",
+        "provider": "Azure DevOps",
+        "buildPipeline": "tsc-rss-build",
+        "buildPipelineUrl": "https://dev.azure.com/org/tsc-weeklybyte-rss/_build",
+        "releasePipeline": "tsc-rss-release",
+        "releasePipelineUrl": "https://dev.azure.com/org/tsc-weeklybyte-rss/_release",
+        "deploymentStrategy": "rolling"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "78%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "d4e5f6g7-h8i9-0123-4567-890123defghi",
+        "logAnalytics": "workspace-tsc-rss",
+        "alerts": ["feed-updates", "content-quality"]
+      }
+    },
+    {
+      "id": "app-005",
+      "applicationName": "tsc-dashboard",
+      "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/tsc-dashboard",
+        "provider": "GitHub Actions",
+        "buildPipeline": "tsc-dashboard-ci",
+        "buildPipelineUrl": "https://github.com/org/tsc-dashboard/actions",
+        "releasePipeline": "tsc-dashboard-cd",
+        "releasePipelineUrl": "https://github.com/org/tsc-dashboard/actions",
         "deploymentStrategy": "blue-green"
       },
       "codeQuality": {
-        "sonarQube": "disabled",
+        "sonarQube": "enabled",
         "codeCoverage": "92%",
         "securityScan": "enabled"
       },
       "monitoring": {
-        "applicationInsights": "i0j1k2l3-m4n5-6789-0123-ef0123456789",
-        "logAnalytics": "workspace-88888",
-        "alerts": ["data-quality", "pipeline-failures", "query-performance"]
+        "applicationInsights": "e5f6g7h8-i9j0-1234-5678-901234efghij",
+        "logAnalytics": "workspace-tsc-dashboard",
+        "alerts": ["dashboard-performance", "data-accuracy"]
       }
     },
     {
-      "id": "app-011",
-      "applicationName": "workflowautomation",
+      "id": "app-006",
+      "applicationName": "resume-analyzer",
       "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/workflow-automation",
-        "provider": "Jenkins",
-        "buildPipeline": "workflow-build",
-        "buildPipelineUrl": "https://jenkins.org/job/workflow-build",
-        "releasePipeline": "workflow-deploy",
-        "releasePipelineUrl": "https://jenkins.org/job/workflow-deploy",
-        "deploymentStrategy": "recreate"
-      },
-      "codeQuality": {
-        "sonarQube": "disabled",
-        "codeCoverage": "70%",
-        "securityScan": "enabled"
-      },
-      "monitoring": {
-        "applicationInsights": "j1k2l3m4-n5o6-7890-1234-f01234567890",
-        "logAnalytics": "workspace-99999",
-        "alerts": ["workflow-failures", "execution-time"]
-      }
-    },
-    {
-      "id": "app-012",
-      "applicationName": "integrationhub",
-      "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/integration-hub",
+        "repositoryUrl": "https://github.com/org/resume-analyzer",
         "provider": "Azure DevOps",
-        "buildPipeline": "integration-build",
-        "buildPipelineUrl": "https://dev.azure.com/org/integration-hub/_build",
-        "releasePipeline": "integration-release",
-        "releasePipelineUrl": "https://dev.azure.com/org/integration-hub/_release",
+        "buildPipeline": "resume-analyzer-build",
+        "buildPipelineUrl": "https://dev.azure.com/org/resume-analyzer/_build",
+        "releasePipeline": "resume-analyzer-release",
+        "releasePipelineUrl": "https://dev.azure.com/org/resume-analyzer/_release",
         "deploymentStrategy": "canary"
       },
       "codeQuality": {
-        "sonarQube": "disabled",
-        "codeCoverage": "68%",
+        "sonarQube": "enabled",
+        "codeCoverage": "89%",
         "securityScan": "enabled"
       },
       "monitoring": {
-        "applicationInsights": "k2l3m4n5-o6p7-8901-2345-012345678901",
-        "logAnalytics": "workspace-00000",
-        "alerts": ["api-latency", "integration-failures"]
+        "applicationInsights": "f6g7h8i9-j0k1-2345-6789-012345fghijk",
+        "logAnalytics": "workspace-resume-analyzer",
+        "alerts": ["analysis-accuracy", "processing-time"]
+      }
+    },
+    {
+      "id": "app-007",
+      "applicationName": "interview-bot",
+      "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/interview-bot",
+        "provider": "GitLab CI",
+        "buildPipeline": "interview-bot-pipeline",
+        "buildPipelineUrl": "https://gitlab.com/org/interview-bot/-/pipelines",
+        "releasePipeline": "interview-bot-deploy",
+        "releasePipelineUrl": "https://gitlab.com/org/interview-bot/-/pipelines",
+        "deploymentStrategy": "rolling"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "84%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "g7h8i9j0-k1l2-3456-7890-123456ghijkl",
+        "logAnalytics": "workspace-interview-bot",
+        "alerts": ["scheduling-success", "candidate-satisfaction"]
+      }
+    },
+    {
+      "id": "app-008",
+      "applicationName": "uw-workbench-accelerator",
+      "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/uw-workbench-accelerator",
+        "provider": "Jenkins",
+        "buildPipeline": "uw-workbench-build",
+        "buildPipelineUrl": "https://jenkins.org/job/uw-workbench-build",
+        "releasePipeline": "uw-workbench-deploy",
+        "releasePipelineUrl": "https://jenkins.org/job/uw-workbench-deploy",
+        "deploymentStrategy": "blue-green"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "76%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "h8i9j0k1-l2m3-4567-8901-234567hijklm",
+        "logAnalytics": "workspace-uw-workbench",
+        "alerts": ["workbench-availability", "user-activity"]
+      }
+    },
+    {
+      "id": "app-009",
+      "applicationName": "ai-agents-dashboard",
+      "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/ai-agents-dashboard",
+        "provider": "Azure DevOps",
+        "buildPipeline": "ai-agents-build",
+        "buildPipelineUrl": "https://dev.azure.com/org/ai-agents-dashboard/_build",
+        "releasePipeline": "ai-agents-release",
+        "releasePipelineUrl": "https://dev.azure.com/org/ai-agents-dashboard/_release",
+        "deploymentStrategy": "canary"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "91%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "i9j0k1l2-m3n4-5678-9012-345678ijklmn",
+        "logAnalytics": "workspace-ai-agents",
+        "alerts": ["agent-performance", "dashboard-responsiveness"]
+      }
+    },
+    {
+      "id": "app-010",
+      "applicationName": "mvp-accelerator",
+      "cicdPipeline": {
+        "repositoryUrl": "https://github.com/org/mvp-accelerator",
+        "provider": "GitHub Actions",
+        "buildPipeline": "mvp-accelerator-ci",
+        "buildPipelineUrl": "https://github.com/org/mvp-accelerator/actions",
+        "releasePipeline": "mvp-accelerator-cd",
+        "releasePipelineUrl": "https://github.com/org/mvp-accelerator/actions",
+        "deploymentStrategy": "rolling"
+      },
+      "codeQuality": {
+        "sonarQube": "enabled",
+        "codeCoverage": "87%",
+        "securityScan": "enabled"
+      },
+      "monitoring": {
+        "applicationInsights": "j0k1l2m3-n4o5-6789-0123-456789jklmno",
+        "logAnalytics": "workspace-mvp-accelerator",
+        "alerts": ["deployment-success", "feature-adoption"]
       }
     }
   ]

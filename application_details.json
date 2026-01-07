@@ -2,210 +2,267 @@
   "applications": [
     {
       "id": "app-001",
-      "applicationName": "resume-analyzer",
-      "displayName": "Resume Analyzer",
+      "applicationName": "ado-to-github-accelerator",
+      "displayName": "ADO to Github Accelerator",
       "type": "accelerator",
-      "description": "AI-powered resume analysis and candidate matching system",
-      "version": "2.1.0",
+      "description": "Migration accelerator for Azure DevOps to GitHub transitions",
+      "version": "1.0.0",
       "status": "active",
-      "owner": "AI Team",
-      "maintainer": "john.doe@company.com",
-      "tags": [
-        "AI",
-        "NLP",
-        "HR",
-        "Analytics"
-      ]
+      "owner": "DevOps Team",
+      "maintainer": "devops.team@company.com",
+      "tags": ["Migration", "DevOps", "GitHub", "Azure DevOps"]
     },
     {
       "id": "app-002",
-      "applicationName": "chatbot",
-      "displayName": "Chat Bot",
+      "applicationName": "environment-provisioning-bot",
+      "displayName": "Environment Provisioning Bot",
       "type": "bot",
-      "description": "General purpose conversational AI for customer interactions",
-      "version": "1.5.2",
+      "description": "Automated environment provisioning and infrastructure management",
+      "version": "1.2.0",
       "status": "active",
-      "owner": "Bot Team",
-      "maintainer": "jane.smith@company.com",
-      "tags": [
-        "Conversational AI",
-        "Customer Service",
-        "NLP"
-      ]
+      "owner": "Infrastructure Team",
+      "maintainer": "infra.team@company.com",
+      "tags": ["Infrastructure", "Provisioning", "Automation"]
     },
     {
       "id": "app-003",
-      "applicationName": "supportbot",
-      "displayName": "Support Bot",
+      "applicationName": "diagnostics-bot",
+      "displayName": "Diagnostics Bot",
       "type": "bot",
-      "description": "Automated customer support and ticket management system",
-      "version": "1.8.1",
+      "description": "System diagnostics and troubleshooting automation",
+      "version": "1.1.5",
       "status": "active",
-      "owner": "Support Team",
-      "maintainer": "mike.johnson@company.com",
-      "tags": [
-        "Support",
-        "Automation",
-        "Ticketing"
-      ]
+      "owner": "Operations Team",
+      "maintainer": "ops.team@company.com",
+      "tags": ["Diagnostics", "Troubleshooting", "Monitoring"]
     },
     {
       "id": "app-004",
-      "applicationName": "salesbot",
-      "displayName": "Sales Bot",
-      "type": "bot",
-      "description": "Sales process automation and lead qualification",
-      "version": "0.9.0",
-      "status": "development",
-      "owner": "Sales Team",
-      "maintainer": "sarah.wilson@company.com",
-      "tags": [
-        "Sales",
-        "CRM",
-        "Lead Generation"
-      ]
+      "applicationName": "tsc-weeklybyte-rss",
+      "displayName": "TSC WeeklyByte - RSS Feed",
+      "type": "tsc-solutions",
+      "description": "RSS feed aggregation and content distribution system",
+      "version": "2.0.1",
+      "status": "active",
+      "owner": "TSC Team",
+      "maintainer": "tsc.team@company.com",
+      "tags": ["RSS", "Content", "Distribution"]
     },
     {
       "id": "app-005",
-      "applicationName": "faqbot",
-      "displayName": "FAQ Bot",
-      "type": "bot",
-      "description": "Intelligent FAQ system with natural language processing",
-      "version": "1.3.0",
+      "applicationName": "tsc-dashboard",
+      "displayName": "Dashboard TSC - Solutions",
+      "type": "tsc-solutions",
+      "description": "Comprehensive solutions dashboard and analytics platform",
+      "version": "1.8.0",
       "status": "active",
-      "owner": "Knowledge Team",
-      "maintainer": "alex.brown@company.com",
-      "tags": [
-        "FAQ",
-        "Knowledge Base",
-        "Self-Service"
-      ]
+      "owner": "TSC Team",
+      "maintainer": "tsc.team@company.com",
+      "tags": ["Dashboard", "Analytics", "Solutions"]
     },
     {
       "id": "app-006",
-      "applicationName": "voicebot",
-      "displayName": "Voice Bot",
-      "type": "bot",
-      "description": "Voice-enabled AI assistant with speech recognition",
-      "version": "1.0.0-beta",
-      "status": "beta",
-      "owner": "Voice Team",
-      "maintainer": "emma.davis@company.com",
-      "tags": [
-        "Voice AI",
-        "Speech Recognition",
-        "IVR"
-      ]
+      "applicationName": "resume-analyzer",
+      "displayName": "Resume Analyzer",
+      "type": "tsc-solutions",
+      "description": "AI-powered resume analysis and candidate matching system",
+      "version": "2.1.0",
+      "status": "active",
+      "owner": "TSC Team",
+      "maintainer": "tsc.team@company.com",
+      "tags": ["AI", "NLP", "HR", "Analytics"]
     },
     {
       "id": "app-007",
-      "applicationName": "aiassistant",
-      "displayName": "AI Assistant",
+      "applicationName": "interview-bot",
+      "displayName": "Interview Bot",
       "type": "bot",
-      "description": "Advanced AI assistant with multi-modal capabilities",
-      "version": "2.0.1",
+      "description": "Automated interview scheduling and candidate assessment",
+      "version": "1.4.2",
       "status": "active",
-      "owner": "AI Team",
-      "maintainer": "david.lee@company.com",
-      "tags": [
-        "AI Assistant",
-        "Multi-modal",
-        "Advanced AI"
-      ]
+      "owner": "HR Team",
+      "maintainer": "hr.team@company.com",
+      "tags": ["Interview", "HR", "Assessment"]
     },
     {
       "id": "app-008",
-      "applicationName": "l2technical",
-      "displayName": "L2 Technical",
+      "applicationName": "uw-workbench-accelerator",
+      "displayName": "UW WorkBench Accelerator",
       "type": "accelerator",
-      "description": "Level 2 technical support automation platform",
-      "version": "1.6.0",
+      "description": "University workbench development and deployment accelerator",
+      "version": "1.0.3",
       "status": "active",
-      "owner": "Technical Team",
-      "maintainer": "chris.taylor@company.com",
-      "tags": [
-        "Technical Support",
-        "Automation",
-        "L2"
-      ]
+      "owner": "Education Team",
+      "maintainer": "edu.team@company.com",
+      "tags": ["Education", "Workbench", "Development"]
     },
     {
       "id": "app-009",
-      "applicationName": "tagaccelerator",
+      "applicationName": "ai-agents-dashboard",
+      "displayName": "AI Agents Dashboard",
+      "type": "agents",
+      "description": "Central dashboard for AI agent management and monitoring",
+      "version": "2.1.0",
+      "status": "active",
+      "owner": "AI Team",
+      "maintainer": "ai.team@company.com",
+      "tags": ["AI", "Agents", "Dashboard"]
+    },
+    {
+      "id": "app-010",
+      "applicationName": "mvp-accelerator",
+      "displayName": "MVP Accelerator",
+      "type": "accelerator",
+      "description": "Minimum viable product development accelerator",
+      "version": "1.5.0",
+      "status": "active",
+      "owner": "Product Team",
+      "maintainer": "product.team@company.com",
+      "tags": ["MVP", "Product", "Development"]
+    },
+    {
+      "id": "app-011",
+      "applicationName": "tag-accelerator",
       "displayName": "TAG Accelerator",
       "type": "accelerator",
       "description": "Event-driven processing and analytics accelerator",
       "version": "1.4.2",
       "status": "active",
       "owner": "Platform Team",
-      "maintainer": "lisa.garcia@company.com",
-      "tags": [
-        "Event Processing",
-        "Analytics",
-        "Real-time"
-      ]
-    },
-    {
-      "id": "app-010",
-      "applicationName": "analyticsengine",
-      "displayName": "Analytics Engine",
-      "type": "accelerator",
-      "description": "Comprehensive data analytics and business intelligence platform",
-      "version": "2.2.0",
-      "status": "active",
-      "owner": "Analytics Team",
-      "maintainer": "robert.martinez@company.com",
-      "tags": [
-        "Analytics",
-        "BI",
-        "Data Science"
-      ]
-    },
-    {
-      "id": "app-011",
-      "applicationName": "workflowautomation",
-      "displayName": "Workflow Automation",
-      "type": "accelerator",
-      "description": "Business process automation and workflow orchestration",
-      "version": "1.1.0-beta",
-      "status": "beta",
-      "owner": "Automation Team",
-      "maintainer": "jennifer.clark@company.com",
-      "tags": [
-        "Workflow",
-        "Automation",
-        "BPM"
-      ]
+      "maintainer": "platform.team@company.com",
+      "tags": ["Event Processing", "Analytics", "Real-time"]
     },
     {
       "id": "app-012",
-      "applicationName": "integrationhub",
-      "displayName": "Integration Hub",
-      "type": "accelerator",
-      "description": "API management and service integration platform",
-      "version": "0.8.0",
-      "status": "development",
-      "owner": "Integration Team",
-      "maintainer": "kevin.rodriguez@company.com",
-      "tags": [
-        "API Management",
-        "Integration",
-        "Microservices"
-      ]
+      "applicationName": "domain-bot",
+      "displayName": "Domain Bot",
+      "type": "organization-bot",
+      "description": "Domain management and DNS automation system",
+      "version": "1.3.1",
+      "status": "active",
+      "owner": "Infrastructure Team",
+      "maintainer": "infra.team@company.com",
+      "tags": ["Domain", "DNS", "Management"]
     },
     {
       "id": "app-013",
-      "applicationName": "string",
-      "displayName": "string",
-      "type": "string",
-      "description": "string",
-      "version": "string",
-      "status": "string",
-      "owner": "string",
-      "maintainer": "string",
-      "tags": [
-        "string"
-      ]
+      "applicationName": "hr-bot-vimi",
+      "displayName": "HR Bot - ViMi",
+      "type": "organization-bot",
+      "description": "HR virtual assistant for employee management",
+      "version": "2.0.0",
+      "status": "active",
+      "owner": "HR Team",
+      "maintainer": "hr.team@company.com",
+      "tags": ["HR", "Virtual Assistant", "Employee Management"]
+    },
+    {
+      "id": "app-014",
+      "applicationName": "ops-bot",
+      "displayName": "Ops Bot",
+      "type": "bot",
+      "description": "Operations automation and incident management",
+      "version": "1.6.2",
+      "status": "active",
+      "owner": "Operations Team",
+      "maintainer": "ops.team@company.com",
+      "tags": ["Operations", "Automation", "Incident Management"]
+    },
+    {
+      "id": "app-015",
+      "applicationName": "ba-agent",
+      "displayName": "BA Agent",
+      "type": "tsc-solutions",
+      "description": "Business analyst agent for requirement gathering",
+      "version": "1.2.3",
+      "status": "active",
+      "owner": "TSC Team",
+      "maintainer": "tsc.team@company.com",
+      "tags": ["Business Analysis", "Requirements", "Agent"]
+    },
+    {
+      "id": "app-016",
+      "applicationName": "digital-studio",
+      "displayName": "Digital Studio",
+      "type": "tsc-solutions",
+      "description": "Digital content creation and management studio",
+      "version": "1.7.0",
+      "status": "active",
+      "owner": "TSC Team",
+      "maintainer": "tsc.team@company.com",
+      "tags": ["Digital", "Content", "Studio"]
+    },
+    {
+      "id": "app-017",
+      "applicationName": "bench-management-tool",
+      "displayName": "Bench Management Tool",
+      "type": "agents",
+      "description": "Employee bench management and allocation system",
+      "version": "1.4.0",
+      "status": "active",
+      "owner": "HR Team",
+      "maintainer": "hr.team@company.com",
+      "tags": ["Bench Management", "HR", "Allocation"]
+    },
+    {
+      "id": "app-018",
+      "applicationName": "github-copilot-iac",
+      "displayName": "Github Copilot IAC Automation",
+      "type": "accelerator",
+      "description": "Infrastructure as Code automation with GitHub Copilot",
+      "version": "1.1.0",
+      "status": "active",
+      "owner": "DevOps Team",
+      "maintainer": "devops.team@company.com",
+      "tags": ["IaC", "GitHub Copilot", "Automation"]
+    },
+    {
+      "id": "app-019",
+      "applicationName": "hr-document-verification",
+      "displayName": "HR Document Verification Agent",
+      "type": "organization-solution",
+      "description": "Automated HR document verification and validation",
+      "version": "1.0.5",
+      "status": "active",
+      "owner": "HR Team",
+      "maintainer": "hr.team@company.com",
+      "tags": ["Document Verification", "HR", "Validation"]
+    },
+    {
+      "id": "app-020",
+      "applicationName": "kyc-virtual-assistant",
+      "displayName": "KYC Virtual Assistant Bot - GAIG",
+      "type": "bot",
+      "description": "Know Your Customer virtual assistant for compliance",
+      "version": "1.3.2",
+      "status": "active",
+      "owner": "Compliance Team",
+      "maintainer": "compliance.team@company.com",
+      "tags": ["KYC", "Compliance", "Virtual Assistant"]
+    },
+    {
+      "id": "app-021",
+      "applicationName": "boilerplate-automation",
+      "displayName": "Boiler Plate Automation",
+      "type": "tsc-solutions",
+      "description": "Automated boilerplate code generation and templates",
+      "version": "2.0.2",
+      "status": "active",
+      "owner": "TSC Team",
+      "maintainer": "tsc.team@company.com",
+      "tags": ["Boilerplate", "Code Generation", "Templates"]
+    },
+    {
+      "id": "app-022",
+      "applicationName": "backstage-idp",
+      "displayName": "Backstage IDP",
+      "type": "accelerator",
+      "description": "Internal Developer Platform using Backstage",
+      "version": "1.2.1",
+      "status": "active",
+      "owner": "Platform Team",
+      "maintainer": "platform.team@company.com",
+      "tags": ["IDP", "Backstage", "Developer Platform"]
     }
   ]
 }

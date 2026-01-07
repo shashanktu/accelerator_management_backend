@@ -1,192 +1,302 @@
-
 {
   "applicationDetails": {
     "applications": [
       {
+        "applicationName": "ado-to-github-accelerator",
+        "displayName": "ADO to Github Accelerator",
+        "type": "accelerator",
+        "description": "Migration accelerator for Azure DevOps to GitHub transitions",
+        "version": "1.0.0",
+        "status": "active",
+        "owner": "DevOps Team",
+        "maintainer": "devops.team@company.com",
+        "applicationUrl": "https://ado-github-accelerator.company.com",
+        "tags": ["Migration", "DevOps", "GitHub", "Azure DevOps"]
+      },
+      {
+        "applicationName": "environment-provisioning-bot",
+        "displayName": "Environment Provisioning Bot",
+        "type": "bot",
+        "description": "Automated environment provisioning and infrastructure management",
+        "version": "1.2.0",
+        "status": "active",
+        "owner": "Infrastructure Team",
+        "maintainer": "infra.team@company.com",
+        "applicationUrl": "https://env-provisioning-bot.company.com",
+        "tags": ["Infrastructure", "Provisioning", "Automation"]
+      },
+      {
+        "applicationName": "diagnostics-bot",
+        "displayName": "Diagnostics Bot",
+        "type": "bot",
+        "description": "System diagnostics and troubleshooting automation",
+        "version": "1.1.5",
+        "status": "active",
+        "owner": "Operations Team",
+        "maintainer": "ops.team@company.com",
+        "applicationUrl": "https://diagnostics-bot.company.com",
+        "tags": ["Diagnostics", "Troubleshooting", "Monitoring"]
+      },
+      {
+        "applicationName": "tsc-weeklybyte-rss",
+        "displayName": "TSC WeeklyByte - RSS Feed",
+        "type": "tsc-solutions",
+        "description": "RSS feed aggregation and content distribution system",
+        "version": "2.0.1",
+        "status": "active",
+        "owner": "TSC Team",
+        "maintainer": "tsc.team@company.com",
+        "applicationUrl": "https://tsc-weeklybyte-rss.company.com",
+        "tags": ["RSS", "Content", "Distribution"]
+      },
+      {
+        "applicationName": "tsc-dashboard",
+        "displayName": "Dashboard TSC - Solutions",
+        "type": "tsc-solutions",
+        "description": "Comprehensive solutions dashboard and analytics platform",
+        "version": "1.8.0",
+        "status": "active",
+        "owner": "TSC Team",
+        "maintainer": "tsc.team@company.com",
+        "applicationUrl": "https://tsc-dashboard.company.com",
+        "tags": ["Dashboard", "Analytics", "Solutions"]
+      },
+      {
         "applicationName": "resume-analyzer",
         "displayName": "Resume Analyzer",
-        "type": "accelerator",
+        "type": "tsc-solutions",
         "description": "AI-powered resume analysis and candidate matching system",
         "version": "2.1.0",
         "status": "active",
-        "owner": "AI Team",
-        "maintainer": "john.doe@company.com","mohan.ande@company.com"
-        
+        "owner": "TSC Team",
+        "maintainer": "tsc.team@company.com",
+        "applicationUrl": "https://resume-analyzer.company.com",
         "tags": ["AI", "NLP", "HR", "Analytics"]
       },
       {
-        "applicationName": "chatbot",
-        "displayName": "Chat Bot",
+        "applicationName": "interview-bot",
+        "displayName": "Interview Bot",
         "type": "bot",
-        "description": "General purpose conversational AI for customer interactions",
-        "version": "1.5.2",
+        "description": "Automated interview scheduling and candidate assessment",
+        "version": "1.4.2",
         "status": "active",
-        "owner": "Bot Team",
-        "maintainer": "jane.smith@company.com",
-        "tags": ["Conversational AI", "Customer Service", "NLP"]
+        "owner": "HR Team",
+        "maintainer": "hr.team@company.com",
+        "applicationUrl": "https://interview-bot.company.com",
+        "tags": ["Interview", "HR", "Assessment"]
       },
       {
-        "applicationName": "supportbot",
-        "displayName": "Support Bot",
-        "type": "bot",
-        "description": "Automated customer support and ticket management system",
-        "version": "1.8.1",
+        "applicationName": "uw-workbench-accelerator",
+        "displayName": "UW WorkBench Accelerator",
+        "type": "accelerator",
+        "description": "University workbench development and deployment accelerator",
+        "version": "1.0.3",
         "status": "active",
-        "owner": "Support Team",
-        "maintainer": "mike.johnson@company.com",
-        "tags": ["Support", "Automation", "Ticketing"]
+        "owner": "Education Team",
+        "maintainer": "edu.team@company.com",
+        "applicationUrl": "https://uw-workbench-accelerator.company.com",
+        "tags": ["Education", "Workbench", "Development"]
       },
       {
-        "applicationName": "salesbot",
-        "displayName": "Sales Bot",
-        "type": "bot",
-        "description": "Sales process automation and lead qualification",
-        "version": "0.9.0",
-        "status": "development",
-        "owner": "Sales Team",
-        "maintainer": "sarah.wilson@company.com",
-        "tags": ["Sales", "CRM", "Lead Generation"]
-      },
-      {
-        "applicationName": "faqbot",
-        "displayName": "FAQ Bot",
-        "type": "bot",
-        "description": "Intelligent FAQ system with natural language processing",
-        "version": "1.3.0",
-        "status": "active",
-        "owner": "Knowledge Team",
-        "maintainer": "alex.brown@company.com",
-        "tags": ["FAQ", "Knowledge Base", "Self-Service"]
-      },
-      {
-        "applicationName": "voicebot",
-        "displayName": "Voice Bot",
-        "type": "bot",
-        "description": "Voice-enabled AI assistant with speech recognition",
-        "version": "1.0.0-beta",
-        "status": "beta",
-        "owner": "Voice Team",
-        "maintainer": "emma.davis@company.com",
-        "tags": ["Voice AI", "Speech Recognition", "IVR"]
-      },
-      {
-        "applicationName": "aiassistant",
-        "displayName": "AI Assistant",
-        "type": "bot",
-        "description": "Advanced AI assistant with multi-modal capabilities",
-        "version": "2.0.1",
+        "applicationName": "ai-agents-dashboard",
+        "displayName": "AI Agents Dashboard",
+        "type": "agents",
+        "description": "Central dashboard for AI agent management and monitoring",
+        "version": "2.1.0",
         "status": "active",
         "owner": "AI Team",
-        "maintainer": "david.lee@company.com",
-        "tags": ["AI Assistant", "Multi-modal", "Advanced AI"]
+        "maintainer": "ai.team@company.com",
+        "applicationUrl": "https://ai-agents-dashboard.company.com",
+        "tags": ["AI", "Agents", "Dashboard"]
       },
       {
-        "applicationName": "l2technical",
-        "displayName": "L2 Technical",
+        "applicationName": "mvp-accelerator",
+        "displayName": "MVP Accelerator",
         "type": "accelerator",
-        "description": "Level 2 technical support automation platform",
-        "version": "1.6.0",
+        "description": "Minimum viable product development accelerator",
+        "version": "1.5.0",
         "status": "active",
-        "owner": "Technical Team",
-        "maintainer": "chris.taylor@company.com",
-        "tags": ["Technical Support", "Automation", "L2"]
+        "owner": "Product Team",
+        "maintainer": "product.team@company.com",
+        "applicationUrl": "https://mvp-accelerator.company.com",
+        "tags": ["MVP", "Product", "Development"]
       },
       {
-        "applicationName": "tagaccelerator",
+        "applicationName": "tag-accelerator",
         "displayName": "TAG Accelerator",
         "type": "accelerator",
         "description": "Event-driven processing and analytics accelerator",
         "version": "1.4.2",
         "status": "active",
         "owner": "Platform Team",
-        "maintainer": "lisa.garcia@company.com",
+        "maintainer": "platform.team@company.com",
+        "applicationUrl": "https://tag-accelerator.company.com",
         "tags": ["Event Processing", "Analytics", "Real-time"]
       },
       {
-        "applicationName": "analyticsengine",
-        "displayName": "Analytics Engine",
-        "type": "accelerator",
-        "description": "Comprehensive data analytics and business intelligence platform",
-        "version": "2.2.0",
+        "applicationName": "domain-bot",
+        "displayName": "Domain Bot",
+        "type": "organization-bot",
+        "description": "Domain management and DNS automation system",
+        "version": "1.3.1",
         "status": "active",
-        "owner": "Analytics Team",
-        "maintainer": "robert.martinez@company.com",
-        "tags": ["Analytics", "BI", "Data Science"]
+        "owner": "Infrastructure Team",
+        "maintainer": "infra.team@company.com",
+        "applicationUrl": "https://domain-bot.company.com",
+        "tags": ["Domain", "DNS", "Management"]
       },
       {
-        "applicationName": "workflowautomation",
-        "displayName": "Workflow Automation",
-        "type": "accelerator",
-        "description": "Business process automation and workflow orchestration",
-        "version": "1.1.0-beta",
-        "status": "beta",
-        "owner": "Automation Team",
-        "maintainer": "jennifer.clark@company.com",
-        "tags": ["Workflow", "Automation", "BPM"]
+        "applicationName": "hr-bot-vimi",
+        "displayName": "HR Bot - ViMi",
+        "type": "organization-bot",
+        "description": "HR virtual assistant for employee management",
+        "version": "2.0.0",
+        "status": "active",
+        "owner": "HR Team",
+        "maintainer": "hr.team@company.com",
+        "applicationUrl": "https://hr-bot-vimi.company.com",
+        "tags": ["HR", "Virtual Assistant", "Employee Management"]
       },
       {
-        "applicationName": "integrationhub",
-        "displayName": "Integration Hub",
+        "applicationName": "ops-bot",
+        "displayName": "Ops Bot",
+        "type": "bot",
+        "description": "Operations automation and incident management",
+        "version": "1.6.2",
+        "status": "active",
+        "owner": "Operations Team",
+        "maintainer": "ops.team@company.com",
+        "applicationUrl": "https://ops-bot.company.com",
+        "tags": ["Operations", "Automation", "Incident Management"]
+      },
+      {
+        "applicationName": "ba-agent",
+        "displayName": "BA Agent",
+        "type": "tsc-solutions",
+        "description": "Business analyst agent for requirement gathering",
+        "version": "1.2.3",
+        "status": "active",
+        "owner": "TSC Team",
+        "maintainer": "tsc.team@company.com",
+        "applicationUrl": "https://ba-agent.company.com",
+        "tags": ["Business Analysis", "Requirements", "Agent"]
+      },
+      {
+        "applicationName": "digital-studio",
+        "displayName": "Digital Studio",
+        "type": "tsc-solutions",
+        "description": "Digital content creation and management studio",
+        "version": "1.7.0",
+        "status": "active",
+        "owner": "TSC Team",
+        "maintainer": "tsc.team@company.com",
+        "applicationUrl": "https://digital-studio.company.com",
+        "tags": ["Digital", "Content", "Studio"]
+      },
+      {
+        "applicationName": "bench-management-tool",
+        "displayName": "Bench Management Tool",
+        "type": "agents",
+        "description": "Employee bench management and allocation system",
+        "version": "1.4.0",
+        "status": "active",
+        "owner": "HR Team",
+        "maintainer": "hr.team@company.com",
+        "applicationUrl": "https://bench-management-tool.company.com",
+        "tags": ["Bench Management", "HR", "Allocation"]
+      },
+      {
+        "applicationName": "github-copilot-iac",
+        "displayName": "Github Copilot IAC Automation",
         "type": "accelerator",
-        "description": "API management and service integration platform",
-        "version": "0.8.0",
-        "status": "development",
-        "owner": "Integration Team",
-        "maintainer": "kevin.rodriguez@company.com",
-        "tags": ["API Management", "Integration", "Microservices"]
+        "description": "Infrastructure as Code automation with GitHub Copilot",
+        "version": "1.1.0",
+        "status": "active",
+        "owner": "DevOps Team",
+        "maintainer": "devops.team@company.com",
+        "applicationUrl": "https://github-copilot-iac.company.com",
+        "tags": ["IaC", "GitHub Copilot", "Automation"]
+      },
+      {
+        "applicationName": "hr-document-verification",
+        "displayName": "HR Document Verification Agent",
+        "type": "organization-solution",
+        "description": "Automated HR document verification and validation",
+        "version": "1.0.5",
+        "status": "active",
+        "owner": "HR Team",
+        "maintainer": "hr.team@company.com",
+        "applicationUrl": "https://hr-document-verification.company.com",
+        "tags": ["Document Verification", "HR", "Validation"]
+      },
+      {
+        "applicationName": "kyc-virtual-assistant",
+        "displayName": "KYC Virtual Assistant Bot - GAIG",
+        "type": "bot",
+        "description": "Know Your Customer virtual assistant for compliance",
+        "version": "1.3.2",
+        "status": "active",
+        "owner": "Compliance Team",
+        "maintainer": "compliance.team@company.com",
+        "applicationUrl": "https://kyc-virtual-assistant.company.com",
+        "tags": ["KYC", "Compliance", "Virtual Assistant"]
+      },
+      {
+        "applicationName": "boilerplate-automation",
+        "displayName": "Boiler Plate Automation",
+        "type": "tsc-solutions",
+        "description": "Automated boilerplate code generation and templates",
+        "version": "2.0.2",
+        "status": "active",
+        "owner": "TSC Team",
+        "maintainer": "tsc.team@company.com",
+        "applicationUrl": "https://boilerplate-automation.company.com",
+        "tags": ["Boilerplate", "Code Generation", "Templates"]
+      },
+      {
+        "applicationName": "backstage-idp",
+        "displayName": "Backstage IDP",
+        "type": "accelerator",
+        "description": "Internal Developer Platform using Backstage",
+        "version": "1.2.1",
+        "status": "active",
+        "owner": "Platform Team",
+        "maintainer": "platform.team@company.com",
+        "applicationUrl": "https://backstage-idp.company.com",
+        "tags": ["IDP", "Backstage", "Developer Platform"]
       }
     ]
   },
   "devopsDetails": {
     "applications": [
       {
-        "applicationName": "resume-analyzer",
-        "repositoryUrl": "https://github.com/org/resume-analyzer",
+        "applicationName": "ado-to-github-accelerator",
+        "repositoryUrl": "https://github.com/org/ado-to-github-accelerator",
         "cicdPipeline": {
-          "provider": "Azure DevOps",
-          "buildPipeline": "resume-analyzer-build",
-          "releasePipeline": "resume-analyzer-release",
+          "provider": "GitHub Actions",
+          "buildPipeline": "ado-github-ci",
+          "releasePipeline": "ado-github-cd",
           "deploymentStrategy": "blue-green"
         },
         "codeQuality": {
           "sonarQube": "enabled",
-          "codeCoverage": "85%",
+          "codeCoverage": "88%",
           "securityScan": "enabled"
         },
         "monitoring": {
-          "applicationInsights": "f3a1f701-305b-45a7-abba-39325ee0797b",
-          "logAnalytics": "workspace-12345",
-          "alerts": ["high-cpu", "memory-leak", "error-rate"]
+          "applicationInsights": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+          "logAnalytics": "workspace-ado-github",
+          "alerts": ["migration-status", "error-rate"]
         }
       },
       {
-        "applicationName": "chatbot",
-        "repositoryUrl": "https://github.com/org/chatbot",
-        "cicdPipeline": {
-          "provider": "GitHub Actions",
-          "buildPipeline": "chatbot-ci",
-          "releasePipeline": "chatbot-cd",
-          "deploymentStrategy": "rolling"
-        },
-        "codeQuality": {
-          "sonarQube": "enabled",
-          "codeCoverage": "78%",
-          "securityScan": "enabled"
-        },
-        "monitoring": {
-          "applicationInsights": "a2b3c4d5-e6f7-8901-2345-6789abcdef01",
-          "logAnalytics": "workspace-67890",
-          "alerts": ["response-time", "error-rate"]
-        }
-      },
-      {
-        "applicationName": "supportbot",
-        "repositoryUrl": "https://github.com/org/support-bot",
+        "applicationName": "environment-provisioning-bot",
+        "repositoryUrl": "https://github.com/org/environment-provisioning-bot",
         "cicdPipeline": {
           "provider": "Azure DevOps",
-          "buildPipeline": "supportbot-build",
-          "releasePipeline": "supportbot-release",
-          "deploymentStrategy": "canary"
+          "buildPipeline": "env-provisioning-build",
+          "releasePipeline": "env-provisioning-release",
+          "deploymentStrategy": "rolling"
         },
         "codeQuality": {
           "sonarQube": "enabled",
@@ -194,199 +304,31 @@
           "securityScan": "enabled"
         },
         "monitoring": {
-          "applicationInsights": "b3c4d5e6-f7g8-9012-3456-789abcdef012",
-          "logAnalytics": "workspace-11111",
-          "alerts": ["ticket-volume", "resolution-time"]
+          "applicationInsights": "b2c3d4e5-f6g7-8901-2345-678901bcdefg",
+          "logAnalytics": "workspace-env-prov",
+          "alerts": ["provisioning-time", "resource-usage"]
         }
       },
       {
-        "applicationName": "salesbot",
-        "repositoryUrl": "https://github.com/org/sales-bot",
+        "applicationName": "diagnostics-bot",
+        "repositoryUrl": "https://github.com/org/diagnostics-bot",
         "cicdPipeline": {
-          "provider": "Jenkins",
-          "buildPipeline": "salesbot-build",
-          "releasePipeline": "salesbot-deploy",
-          "deploymentStrategy": "recreate"
-        },
-        "codeQuality": {
-          "sonarQube": "disabled",
-          "codeCoverage": "65%",
-          "securityScan": "enabled"
-        },
-        "monitoring": {
-          "applicationInsights": "c4d5e6f7-g8h9-0123-4567-89abcdef0123",
-          "logAnalytics": "workspace-22222",
-          "alerts": ["lead-conversion"]
-        }
-      },
-      {
-        "applicationName": "faqbot",
-        "repositoryUrl": "https://github.com/org/faq-bot",
-        "cicdPipeline": {
-          "provider": "GitLab CI",
-          "buildPipeline": "faqbot-pipeline",
-          "releasePipeline": "faqbot-deploy",
-          "deploymentStrategy": "rolling"
+          "provider": "GitHub Actions",
+          "buildPipeline": "diagnostics-ci",
+          "releasePipeline": "diagnostics-cd",
+          "deploymentStrategy": "canary"
         },
         "codeQuality": {
           "sonarQube": "enabled",
-          "codeCoverage": "90%",
+          "codeCoverage": "85%",
           "securityScan": "enabled"
         },
         "monitoring": {
-          "applicationInsights": "d5e6f7g8-h9i0-1234-5678-9abcdef01234",
-          "logAnalytics": "workspace-33333",
-          "alerts": ["query-accuracy", "response-time"]
-        }
-      },
-      {
-        "applicationName": "voicebot",
-        "repositoryUrl": "https://github.com/org/voice-bot",
-        "cicdPipeline": {
-          "provider": "Azure DevOps",
-          "buildPipeline": "voicebot-build",
-          "releasePipeline": "voicebot-release",
-          "deploymentStrategy": "blue-green"
-        },
-        "codeQuality": {
-          "sonarQube": "enabled",
-          "codeCoverage": "72%",
-          "securityScan": "enabled"
-        },
-        "monitoring": {
-          "applicationInsights": "e6f7g8h9-i0j1-2345-6789-abcdef012345",
-          "logAnalytics": "workspace-44444",
-          "alerts": ["speech-accuracy", "latency"]
+          "applicationInsights": "c3d4e5f6-g7h8-9012-3456-789012cdefgh",
+          "logAnalytics": "workspace-diagnostics",
+          "alerts": ["diagnostic-accuracy", "response-time"]
         }
       }
     ]
-  },
-  "infrastructureDetails": {
-    "environments": {
-      "development": {
-        "resume-analyzer": {
-          "cloud": "Azure",
-          "region": "eastus2",
-          "resourceGroup": "rg-resumeanalyzer-dev",
-          "components": {
-            "appService": { "name": "app-resumeanalyzer-dev", "tier": "Basic", "size": "B1" },
-            "database": { "name": "sql-resumeanalyzer-dev", "type": "Azure SQL", "tier": "Basic", "size": "Basic" },
-            "storage": { "name": "stresumeanlyzerdev", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
-            "cognitiveServices": { "name": "cog-resumeanalyzer-dev", "type": "Text Analytics", "tier": "F0" }
-          }
-        },
-        "chatbot": {
-          "cloud": "Azure",
-          "region": "westus2",
-          "resourceGroup": "rg-chatbot-dev",
-          "components": {
-            "appService": { "name": "app-chatbot-dev", "tier": "Basic", "size": "B1" },
-            "botService": { "name": "bot-chatbot-dev", "tier": "F0" },
-            "storage": { "name": "stchatbotdev", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
-            "cognitiveServices": { "name": "cog-chatbot-dev", "type": "LUIS", "tier": "F0" }
-          }
-        }
-      },
-      "staging": {
-        "resume-analyzer": {
-          "cloud": "Azure",
-          "region": "eastus2",
-          "resourceGroup": "rg-resumeanalyzer-staging",
-          "components": {
-            "appService": { "name": "app-resumeanalyzer-staging", "tier": "Standard", "size": "S1" },
-            "database": { "name": "sql-resumeanalyzer-staging", "type": "Azure SQL", "tier": "Standard", "size": "S0" },
-            "storage": { "name": "stresumeanlyzerstaging", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
-            "cognitiveServices": { "name": "cog-resumeanalyzer-staging", "type": "Text Analytics", "tier": "S0" }
-          }
-        },
-        "chatbot": {
-          "cloud": "Azure",
-          "region": "westus2",
-          "resourceGroup": "rg-chatbot-staging",
-          "components": {
-            "appService": { "name": "app-chatbot-staging", "tier": "Standard", "size": "S1" },
-            "botService": { "name": "bot-chatbot-staging", "tier": "S1" },
-            "storage": { "name": "stchatbotstaging", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
-            "cognitiveServices": { "name": "cog-chatbot-staging", "type": "LUIS", "tier": "S0" }
-          }
-        }
-      },
-      "production": {
-        "resume-analyzer": {
-          "cloud": "Azure",
-          "region": "eastus2",
-          "resourceGroup": "rg-resumeanalyzer-prod",
-          "components": {
-            "appService": { "name": "app-resumeanalyzer-prod", "tier": "Premium", "size": "P1v2" },
-            "database": { "name": "sql-resumeanalyzer-prod", "type": "Azure SQL", "tier": "Standard", "size": "S2" },
-            "storage": { "name": "stresumeanlyzerprod", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
-            "cognitiveServices": { "name": "cog-resumeanalyzer-prod", "type": "Text Analytics", "tier": "S0" },
-            "loadBalancer": { "name": "lb-resumeanalyzer-prod", "tier": "Standard" },
-            "cdn": { "name": "cdn-resumeanalyzer-prod", "tier": "Standard_Microsoft" }
-          }
-        },
-        "chatbot": {
-          "cloud": "Azure",
-          "region": "westus2",
-          "resourceGroup": "rg-chatbot-prod",
-          "components": {
-            "appService": { "name": "app-chatbot-prod", "tier": "Standard", "size": "S2" },
-            "botService": { "name": "bot-chatbot-prod", "tier": "S1" },
-            "storage": { "name": "stchatbotprod", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
-            "cognitiveServices": { "name": "cog-chatbot-prod", "type": "LUIS", "tier": "S0" },
-            "trafficManager": { "name": "tm-chatbot-prod", "tier": "Standard" }
-          }
-        },
-        "supportbot": {
-          "cloud": "Azure",
-          "region": "centralus",
-          "resourceGroup": "rg-supportbot-prod",
-          "components": {
-            "appService": { "name": "app-supportbot-prod", "tier": "Standard", "size": "S1" },
-            "botService": { "name": "bot-supportbot-prod", "tier": "S1" },
-            "database": { "name": "cosmos-supportbot-prod", "type": "CosmosDB", "tier": "Standard" },
-            "qnaMaker": { "name": "qna-supportbot-prod", "tier": "S0" }
-          }
-        },
-        "faqbot": {
-          "cloud": "Azure",
-          "region": "westeurope",
-          "resourceGroup": "rg-faqbot-prod",
-          "components": {
-            "appService": { "name": "app-faqbot-prod", "tier": "Standard", "size": "S1" },
-            "qnaMaker": { "name": "qna-faqbot-prod", "tier": "S0" },
-            "search": { "name": "srch-faqbot-prod", "type": "Azure Cognitive Search", "tier": "Basic" }
-          }
-        },
-        "voicebot": {
-          "cloud": "Azure",
-          "region": "eastus2",
-          "resourceGroup": "rg-voicebot-prod",
-          "components": {
-            "appService": { "name": "app-voicebot-prod", "tier": "Premium", "size": "P1v2" },
-            "speechService": { "name": "speech-voicebot-prod", "tier": "S0" },
-            "botService": { "name": "bot-voicebot-prod", "tier": "S1" },
-            "storage": { "name": "stvoicebotprod", "type": "Azure Blob Storage", "tier": "Premium_LRS" }
-          }
-        },
-        "aiassistant": {
-          "cloud": "Azure",
-          "region": "westus2",
-          "resourceGroup": "rg-aiassistant-prod",
-          "components": {
-            "appService": { "name": "app-aiassistant-prod", "tier": "Premium", "size": "P2v2" },
-            "openAI": { "name": "openai-aiassistant-prod", "tier": "Standard" },
-            "database": { "name": "sql-aiassistant-prod", "type": "Azure SQL", "tier": "Standard", "size": "S1" },
-            "cognitiveServices": { "name": "cog-aiassistant-prod", "type": "Multi-Service", "tier": "S0" }
-          }
-        }
-      }
-    }
-  },
-  "metadata": {
-    "lastUpdated": "2024-01-15T10:30:00Z",
-    "version": "2.0.0",
-    "totalApplications": 12,
-    "environments": ["development", "staging", "production"]
   }
 }
