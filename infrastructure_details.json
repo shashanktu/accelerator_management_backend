@@ -3,239 +3,197 @@
     "development": [
       {
         "id": "app-001",
-        "applicationName": "resume-analyzer",
+        "applicationName": "ado-to-github",
         "cloud": "Azure",
         "region": "eastus2",
-        "resourceGroup": "rg-resumeanalyzer-dev",
+        "resourceGroup": "rg-ado-to-github-dev",
         "components": {
-          "appService": { "name": "app-resumeanalyzer-dev", "tier": "Basic", "size": "B1" },
-          "database": { "name": "sql-resumeanalyzer-dev", "type": "Azure SQL", "tier": "Basic", "size": "Basic" },
-          "storage": { "name": "stresumeanlyzerdev", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
-          "cognitiveServices": { "name": "cog-resumeanalyzer-dev", "type": "Text Analytics", "tier": "F0" }
+          "appService": { "name": "app-ado-to-github-dev", "tier": "Basic", "size": "B1" },
+          "database": { "name": "sql-ado-to-github-dev", "type": "Azure SQL", "tier": "Basic", "size": "Basic" },
+          "storage": { "name": "stadotogithubdev", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
         }
       },
       {
         "id": "app-002",
-        "applicationName": "chatbot",
+        "applicationName": "environment-provisioning",
         "cloud": "Azure",
         "region": "westus2",
-        "resourceGroup": "rg-chatbot-dev",
+        "resourceGroup": "rg-environment-provisioning-dev",
         "components": {
-          "appService": { "name": "app-chatbot-dev", "tier": "Basic", "size": "B1" },
-          "botService": { "name": "bot-chatbot-dev", "tier": "F0" },
-          "storage": { "name": "stchatbotdev", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
-          "cognitiveServices": { "name": "cog-chatbot-dev", "type": "LUIS", "tier": "F0" }
+          "appService": { "name": "app-environment-provisioning-dev", "tier": "Basic", "size": "B1" },
+          "botService": { "name": "bot-environment-provisioning-dev", "tier": "F0" },
+          "storage": { "name": "stenvprovisioningdev", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
         }
       },
       {
         "id": "app-003",
-        "applicationName": "supportbot",
+        "applicationName": "diagnostics-bot",
         "cloud": "Azure",
         "region": "centralus",
-        "resourceGroup": "rg-supportbot-dev",
+        "resourceGroup": "rg-diagnostics-bot-dev",
         "components": {
-          "appService": { "name": "app-supportbot-dev", "tier": "Basic", "size": "B1" },
-          "botService": { "name": "bot-supportbot-dev", "tier": "F0" },
-          "database": { "name": "cosmos-supportbot-dev", "type": "CosmosDB", "tier": "Free" }
+          "appService": { "name": "app-diagnostics-bot-dev", "tier": "Basic", "size": "B1" },
+          "botService": { "name": "bot-diagnostics-bot-dev", "tier": "F0" },
+          "database": { "name": "cosmos-diagnostics-bot-dev", "type": "CosmosDB", "tier": "Free" }
         }
       }
     ],
     "staging": [
       {
         "id": "app-001",
-        "applicationName": "resume-analyzer",
+        "applicationName": "ado-to-github",
         "cloud": "Azure",
         "region": "eastus2",
-        "resourceGroup": "rg-resumeanalyzer-staging",
+        "resourceGroup": "rg-ado-to-github-staging",
         "components": {
-          "appService": { "name": "app-resumeanalyzer-staging", "tier": "Standard", "size": "S1" },
-          "database": { "name": "sql-resumeanalyzer-staging", "type": "Azure SQL", "tier": "Standard", "size": "S0" },
-          "storage": { "name": "stresumeanlyzerstaging", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
-          "cognitiveServices": { "name": "cog-resumeanalyzer-staging", "type": "Text Analytics", "tier": "S0" }
+          "appService": { "name": "app-ado-to-github-staging", "tier": "Standard", "size": "S1" },
+          "database": { "name": "sql-ado-to-github-staging", "type": "Azure SQL", "tier": "Standard", "size": "S0" },
+          "storage": { "name": "stadotogithubstaging", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
         }
       },
       {
         "id": "app-002",
-        "applicationName": "chatbot",
+        "applicationName": "environment-provisioning",
         "cloud": "Azure",
         "region": "westus2",
-        "resourceGroup": "rg-chatbot-staging",
+        "resourceGroup": "rg-environment-provisioning-staging",
         "components": {
-          "appService": { "name": "app-chatbot-staging", "tier": "Standard", "size": "S1" },
-          "botService": { "name": "bot-chatbot-staging", "tier": "S1" },
-          "storage": { "name": "stchatbotstaging", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
-          "cognitiveServices": { "name": "cog-chatbot-staging", "type": "LUIS", "tier": "S0" }
+          "appService": { "name": "app-environment-provisioning-staging", "tier": "Standard", "size": "S1" },
+          "botService": { "name": "bot-environment-provisioning-staging", "tier": "S1" },
+          "storage": { "name": "stenvprovisioningstaging", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
         }
       },
       {
         "id": "app-003",
-        "applicationName": "supportbot",
+        "applicationName": "diagnostics-bot",
         "cloud": "Azure",
         "region": "centralus",
-        "resourceGroup": "rg-supportbot-staging",
+        "resourceGroup": "rg-diagnostics-bot-staging",
         "components": {
-          "appService": { "name": "app-supportbot-staging", "tier": "Standard", "size": "S1" },
-          "botService": { "name": "bot-supportbot-staging", "tier": "S1" },
-          "database": { "name": "cosmos-supportbot-staging", "type": "CosmosDB", "tier": "Standard" }
+          "appService": { "name": "app-diagnostics-bot-staging", "tier": "Standard", "size": "S1" },
+          "botService": { "name": "bot-diagnostics-bot-staging", "tier": "S1" },
+          "database": { "name": "cosmos-diagnostics-bot-staging", "type": "CosmosDB", "tier": "Standard" }
         }
       }
     ],
     "production": [
       {
         "id": "app-001",
-        "applicationName": "resume-analyzer",
+        "applicationName": "ado-to-github",
         "cloud": "Azure",
         "region": "eastus2",
-        "resourceGroup": "rg-resumeanalyzer-prod",
+        "resourceGroup": "rg-ado-to-github-prod",
         "components": {
-          "appService": { "name": "app-resumeanalyzer-prod", "tier": "Premium", "size": "P1v2" },
-          "database": { "name": "sql-resumeanalyzer-prod", "type": "Azure SQL", "tier": "Standard", "size": "S2" },
-          "storage": { "name": "stresumeanlyzerprod", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
-          "cognitiveServices": { "name": "cog-resumeanalyzer-prod", "type": "Text Analytics", "tier": "S0" },
-          "loadBalancer": { "name": "lb-resumeanalyzer-prod", "tier": "Standard" },
-          "cdn": { "name": "cdn-resumeanalyzer-prod", "tier": "Standard_Microsoft" }
+          "appService": { "name": "app-ado-to-github-prod", "tier": "Premium", "size": "P1v2" },
+          "database": { "name": "sql-ado-to-github-prod", "type": "Azure SQL", "tier": "Standard", "size": "S2" },
+          "storage": { "name": "stadotogithubprod", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
+          "loadBalancer": { "name": "lb-ado-to-github-prod", "tier": "Standard" }
         }
       },
       {
         "id": "app-002",
-        "applicationName": "chatbot",
+        "applicationName": "environment-provisioning",
         "cloud": "Azure",
         "region": "westus2",
-        "resourceGroup": "rg-chatbot-prod",
+        "resourceGroup": "rg-environment-provisioning-prod",
         "components": {
-          "appService": { "name": "app-chatbot-prod", "tier": "Standard", "size": "S2" },
-          "botService": { "name": "bot-chatbot-prod", "tier": "S1" },
-          "storage": { "name": "stchatbotprod", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
-          "cognitiveServices": { "name": "cog-chatbot-prod", "type": "LUIS", "tier": "S0" },
-          "trafficManager": { "name": "tm-chatbot-prod", "tier": "Standard" }
+          "appService": { "name": "app-environment-provisioning-prod", "tier": "Standard", "size": "S2" },
+          "botService": { "name": "bot-environment-provisioning-prod", "tier": "S1" },
+          "storage": { "name": "stenvprovisioningprod", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
         }
       },
       {
         "id": "app-003",
-        "applicationName": "supportbot",
+        "applicationName": "diagnostics-bot",
         "cloud": "Azure",
         "region": "centralus",
-        "resourceGroup": "rg-supportbot-prod",
+        "resourceGroup": "rg-diagnostics-bot-prod",
         "components": {
-          "appService": { "name": "app-supportbot-prod", "tier": "Standard", "size": "S1" },
-          "botService": { "name": "bot-supportbot-prod", "tier": "S1" },
-          "database": { "name": "cosmos-supportbot-prod", "type": "CosmosDB", "tier": "Standard" },
-          "qnaMaker": { "name": "qna-supportbot-prod", "tier": "S0" }
+          "appService": { "name": "app-diagnostics-bot-prod", "tier": "Standard", "size": "S1" },
+          "botService": { "name": "bot-diagnostics-bot-prod", "tier": "S1" },
+          "database": { "name": "cosmos-diagnostics-bot-prod", "type": "CosmosDB", "tier": "Standard" }
         }
       },
       {
         "id": "app-004",
-        "applicationName": "salesbot",
+        "applicationName": "tsc-weeklybyte-rss",
         "cloud": "Azure",
         "region": "eastus",
-        "resourceGroup": "rg-salesbot-prod",
+        "resourceGroup": "rg-tsc-weeklybyte-rss-prod",
         "components": {
-          "appService": { "name": "app-salesbot-prod", "tier": "Basic", "size": "B2" },
-          "botService": { "name": "bot-salesbot-prod", "tier": "S1" },
-          "storage": { "name": "stsalesbotprod", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
+          "appService": { "name": "app-tsc-weeklybyte-rss-prod", "tier": "Basic", "size": "B2" },
+          "storage": { "name": "sttscweeklybyterssprod", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
         }
       },
       {
         "id": "app-005",
-        "applicationName": "faqbot",
+        "applicationName": "dashboard",
         "cloud": "Azure",
         "region": "westeurope",
-        "resourceGroup": "rg-faqbot-prod",
+        "resourceGroup": "rg-dashboard-prod",
         "components": {
-          "appService": { "name": "app-faqbot-prod", "tier": "Standard", "size": "S1" },
-          "qnaMaker": { "name": "qna-faqbot-prod", "tier": "S0" },
-          "search": { "name": "srch-faqbot-prod", "type": "Azure Cognitive Search", "tier": "Basic" }
+          "appService": { "name": "app-dashboard-prod", "tier": "Standard", "size": "S1" },
+          "database": { "name": "sql-dashboard-prod", "type": "Azure SQL", "tier": "Standard", "size": "S1" }
         }
       },
       {
         "id": "app-006",
-        "applicationName": "voicebot",
+        "applicationName": "resume-analyzer",
         "cloud": "Azure",
         "region": "eastus2",
-        "resourceGroup": "rg-voicebot-prod",
+        "resourceGroup": "rg-resume-analyzer-prod",
         "components": {
-          "appService": { "name": "app-voicebot-prod", "tier": "Premium", "size": "P1v2" },
-          "speechService": { "name": "speech-voicebot-prod", "tier": "S0" },
-          "botService": { "name": "bot-voicebot-prod", "tier": "S1" },
-          "storage": { "name": "stvoicebotprod", "type": "Azure Blob Storage", "tier": "Premium_LRS" }
+          "appService": { "name": "app-resume-analyzer-prod", "tier": "Premium", "size": "P1v2" },
+          "cognitiveServices": { "name": "cog-resume-analyzer-prod", "tier": "S0" },
+          "storage": { "name": "stresumeanalyzerprod", "type": "Azure Blob Storage", "tier": "Premium_LRS" }
         }
       },
       {
         "id": "app-007",
-        "applicationName": "aiassistant",
+        "applicationName": "interview-bot",
         "cloud": "Azure",
         "region": "westus2",
-        "resourceGroup": "rg-aiassistant-prod",
+        "resourceGroup": "rg-interview-bot-prod",
         "components": {
-          "appService": { "name": "app-aiassistant-prod", "tier": "Premium", "size": "P2v2" },
-          "openAI": { "name": "openai-aiassistant-prod", "tier": "Standard" },
-          "database": { "name": "sql-aiassistant-prod", "type": "Azure SQL", "tier": "Standard", "size": "S1" },
-          "cognitiveServices": { "name": "cog-aiassistant-prod", "type": "Multi-Service", "tier": "S0" }
+          "appService": { "name": "app-interview-bot-prod", "tier": "Premium", "size": "P2v2" },
+          "botService": { "name": "bot-interview-bot-prod", "tier": "S1" },
+          "database": { "name": "sql-interview-bot-prod", "type": "Azure SQL", "tier": "Standard", "size": "S1" }
         }
       },
       {
         "id": "app-008",
-        "applicationName": "l2technical",
+        "applicationName": "uw-workbench",
         "cloud": "Azure",
         "region": "centralus",
-        "resourceGroup": "rg-l2technical-prod",
+        "resourceGroup": "rg-uw-workbench-prod",
         "components": {
-          "appService": { "name": "app-l2technical-prod", "tier": "Premium", "size": "P1v3" },
-          "database": { "name": "psql-l2technical-prod", "type": "PostgreSQL", "tier": "GeneralPurpose", "size": "GP_Gen5_2" },
-          "containerRegistry": { "name": "acrl2techprod", "tier": "Standard" },
-          "kubernetes": { "name": "aks-l2technical-prod", "tier": "Standard" }
+          "appService": { "name": "app-uw-workbench-prod", "tier": "Premium", "size": "P1v3" },
+          "database": { "name": "psql-uw-workbench-prod", "type": "PostgreSQL", "tier": "GeneralPurpose", "size": "GP_Gen5_2" },
+          "containerRegistry": { "name": "acruwworkbenchprod", "tier": "Standard" }
         }
       },
       {
         "id": "app-009",
-        "applicationName": "tagaccelerator",
+        "applicationName": "ai-agents-dashboard",
         "cloud": "Azure",
         "region": "eastus",
-        "resourceGroup": "rg-tagaccelerator-prod",
+        "resourceGroup": "rg-ai-agents-dashboard-prod",
         "components": {
-          "functionApp": { "name": "func-tagaccelerator-prod", "tier": "Premium", "size": "EP1" },
-          "eventHub": { "name": "evh-tagaccelerator-prod", "tier": "Standard" },
-          "storage": { "name": "sttagacceleratorprod", "type": "Azure Data Lake Gen2", "tier": "Standard_LRS" },
-          "analytics": { "name": "asa-tagaccelerator-prod", "type": "Stream Analytics", "tier": "Standard" }
+          "appService": { "name": "app-ai-agents-dashboard-prod", "tier": "Premium", "size": "P1v2" },
+          "database": { "name": "sql-ai-agents-dashboard-prod", "type": "Azure SQL", "tier": "Standard", "size": "S2" },
+          "cognitiveServices": { "name": "cog-ai-agents-dashboard-prod", "tier": "S0" }
         }
       },
       {
         "id": "app-010",
-        "applicationName": "analyticsengine",
+        "applicationName": "mvp",
         "cloud": "Azure",
         "region": "westus2",
-        "resourceGroup": "rg-analyticsengine-prod",
+        "resourceGroup": "rg-mvp-prod",
         "components": {
-          "databricks": { "name": "dbw-analyticsengine-prod", "tier": "Standard" },
-          "dataFactory": { "name": "adf-analyticsengine-prod", "tier": "Standard" },
-          "synapse": { "name": "syn-analyticsengine-prod", "tier": "DW100c" },
-          "powerBI": { "name": "pbi-analyticsengine-prod", "tier": "Pro" }
-        }
-      },
-      {
-        "id": "app-011",
-        "applicationName": "workflowautomation",
-        "cloud": "Azure",
-        "region": "eastus2",
-        "resourceGroup": "rg-workflowautomation-prod",
-        "components": {
-          "logicApps": { "name": "logic-workflowautomation-prod", "tier": "Standard" },
-          "functionApp": { "name": "func-workflowautomation-prod", "tier": "Premium", "size": "EP2" },
-          "servicebus": { "name": "sb-workflowautomation-prod", "tier": "Standard" },
-          "keyVault": { "name": "kv-workflowautomation-prod", "tier": "Standard" }
-        }
-      },
-      {
-        "id": "app-012",
-        "applicationName": "integrationhub",
-        "cloud": "Azure",
-        "region": "centralus",
-        "resourceGroup": "rg-integrationhub-prod",
-        "components": {
-          "apiManagement": { "name": "apim-integrationhub-prod", "tier": "Standard" },
-          "appService": { "name": "app-integrationhub-prod", "tier": "Standard", "size": "S2" },
-          "servicebus": { "name": "sb-integrationhub-prod", "tier": "Premium" },
-          "eventGrid": { "name": "eg-integrationhub-prod", "tier": "Standard" }
+          "appService": { "name": "app-mvp-prod", "tier": "Standard", "size": "S2" },
+          "database": { "name": "sql-mvp-prod", "type": "Azure SQL", "tier": "Standard", "size": "S1" },
+          "storage": { "name": "stmvpprod", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
         }
       }
     ]
