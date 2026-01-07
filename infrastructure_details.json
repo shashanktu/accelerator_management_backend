@@ -10,7 +10,8 @@
         "components": {
           "appService": { "name": "app-ado-to-github-dev", "tier": "Basic", "size": "B1" },
           "database": { "name": "sql-ado-to-github-dev", "type": "Azure SQL", "tier": "Basic", "size": "Basic" },
-          "storage": { "name": "stadotogithubdev", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
+          "storage": { "name": "stadotogithubdev", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
+          "cognitiveServices": { "name": "cog-ado-to-github-dev", "type": "Text Analytics", "tier": "F0" }
         }
       },
       {
@@ -22,7 +23,8 @@
         "components": {
           "appService": { "name": "app-environment-provisioning-dev", "tier": "Basic", "size": "B1" },
           "botService": { "name": "bot-environment-provisioning-dev", "tier": "F0" },
-          "storage": { "name": "stenvprovisioningdev", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
+          "storage": { "name": "stenvprovisioningdev", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
+          "cognitiveServices": { "name": "cog-environment-provisioning-dev", "type": "LUIS", "tier": "F0" }
         }
       },
       {
@@ -48,7 +50,8 @@
         "components": {
           "appService": { "name": "app-ado-to-github-staging", "tier": "Standard", "size": "S1" },
           "database": { "name": "sql-ado-to-github-staging", "type": "Azure SQL", "tier": "Standard", "size": "S0" },
-          "storage": { "name": "stadotogithubstaging", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
+          "storage": { "name": "stadotogithubstaging", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
+          "cognitiveServices": { "name": "cog-ado-to-github-staging", "type": "Text Analytics", "tier": "S0" }
         }
       },
       {
@@ -60,7 +63,8 @@
         "components": {
           "appService": { "name": "app-environment-provisioning-staging", "tier": "Standard", "size": "S1" },
           "botService": { "name": "bot-environment-provisioning-staging", "tier": "S1" },
-          "storage": { "name": "stenvprovisioningstaging", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
+          "storage": { "name": "stenvprovisioningstaging", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
+          "cognitiveServices": { "name": "cog-environment-provisioning-staging", "type": "LUIS", "tier": "S0" }
         }
       },
       {
@@ -87,7 +91,9 @@
           "appService": { "name": "app-ado-to-github-prod", "tier": "Premium", "size": "P1v2" },
           "database": { "name": "sql-ado-to-github-prod", "type": "Azure SQL", "tier": "Standard", "size": "S2" },
           "storage": { "name": "stadotogithubprod", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
-          "loadBalancer": { "name": "lb-ado-to-github-prod", "tier": "Standard" }
+          "cognitiveServices": { "name": "cog-ado-to-github-prod", "type": "Text Analytics", "tier": "S0" },
+          "loadBalancer": { "name": "lb-ado-to-github-prod", "tier": "Standard" },
+          "cdn": { "name": "cdn-ado-to-github-prod", "tier": "Standard_Microsoft" }
         }
       },
       {
@@ -99,7 +105,9 @@
         "components": {
           "appService": { "name": "app-environment-provisioning-prod", "tier": "Standard", "size": "S2" },
           "botService": { "name": "bot-environment-provisioning-prod", "tier": "S1" },
-          "storage": { "name": "stenvprovisioningprod", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
+          "storage": { "name": "stenvprovisioningprod", "type": "Azure Blob Storage", "tier": "Standard_LRS" },
+          "cognitiveServices": { "name": "cog-environment-provisioning-prod", "type": "LUIS", "tier": "S0" },
+          "trafficManager": { "name": "tm-environment-provisioning-prod", "tier": "Standard" }
         }
       },
       {
@@ -111,7 +119,8 @@
         "components": {
           "appService": { "name": "app-diagnostics-bot-prod", "tier": "Standard", "size": "S1" },
           "botService": { "name": "bot-diagnostics-bot-prod", "tier": "S1" },
-          "database": { "name": "cosmos-diagnostics-bot-prod", "type": "CosmosDB", "tier": "Standard" }
+          "database": { "name": "cosmos-diagnostics-bot-prod", "type": "CosmosDB", "tier": "Standard" },
+          "qnaMaker": { "name": "qna-diagnostics-bot-prod", "tier": "S0" }
         }
       },
       {
@@ -122,6 +131,7 @@
         "resourceGroup": "rg-tsc-weeklybyte-rss-prod",
         "components": {
           "appService": { "name": "app-tsc-weeklybyte-rss-prod", "tier": "Basic", "size": "B2" },
+          "botService": { "name": "bot-tsc-weeklybyte-rss-prod", "tier": "S1" },
           "storage": { "name": "sttscweeklybyterssprod", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
         }
       },
@@ -133,7 +143,8 @@
         "resourceGroup": "rg-dashboard-prod",
         "components": {
           "appService": { "name": "app-dashboard-prod", "tier": "Standard", "size": "S1" },
-          "database": { "name": "sql-dashboard-prod", "type": "Azure SQL", "tier": "Standard", "size": "S1" }
+          "qnaMaker": { "name": "qna-dashboard-prod", "tier": "S0" },
+          "search": { "name": "srch-dashboard-prod", "type": "Azure Cognitive Search", "tier": "Basic" }
         }
       },
       {
@@ -144,7 +155,8 @@
         "resourceGroup": "rg-resume-analyzer-prod",
         "components": {
           "appService": { "name": "app-resume-analyzer-prod", "tier": "Premium", "size": "P1v2" },
-          "cognitiveServices": { "name": "cog-resume-analyzer-prod", "tier": "S0" },
+          "speechService": { "name": "speech-resume-analyzer-prod", "tier": "S0" },
+          "botService": { "name": "bot-resume-analyzer-prod", "tier": "S1" },
           "storage": { "name": "stresumeanalyzerprod", "type": "Azure Blob Storage", "tier": "Premium_LRS" }
         }
       },
@@ -156,8 +168,9 @@
         "resourceGroup": "rg-interview-bot-prod",
         "components": {
           "appService": { "name": "app-interview-bot-prod", "tier": "Premium", "size": "P2v2" },
-          "botService": { "name": "bot-interview-bot-prod", "tier": "S1" },
-          "database": { "name": "sql-interview-bot-prod", "type": "Azure SQL", "tier": "Standard", "size": "S1" }
+          "openAI": { "name": "openai-interview-bot-prod", "tier": "Standard" },
+          "database": { "name": "sql-interview-bot-prod", "type": "Azure SQL", "tier": "Standard", "size": "S1" },
+          "cognitiveServices": { "name": "cog-interview-bot-prod", "type": "Multi-Service", "tier": "S0" }
         }
       },
       {
@@ -169,7 +182,8 @@
         "components": {
           "appService": { "name": "app-uw-workbench-prod", "tier": "Premium", "size": "P1v3" },
           "database": { "name": "psql-uw-workbench-prod", "type": "PostgreSQL", "tier": "GeneralPurpose", "size": "GP_Gen5_2" },
-          "containerRegistry": { "name": "acruwworkbenchprod", "tier": "Standard" }
+          "containerRegistry": { "name": "acruwworkbenchprod", "tier": "Standard" },
+          "kubernetes": { "name": "aks-uw-workbench-prod", "tier": "Standard" }
         }
       },
       {
@@ -179,9 +193,10 @@
         "region": "eastus",
         "resourceGroup": "rg-ai-agents-dashboard-prod",
         "components": {
-          "appService": { "name": "app-ai-agents-dashboard-prod", "tier": "Premium", "size": "P1v2" },
-          "database": { "name": "sql-ai-agents-dashboard-prod", "type": "Azure SQL", "tier": "Standard", "size": "S2" },
-          "cognitiveServices": { "name": "cog-ai-agents-dashboard-prod", "tier": "S0" }
+          "functionApp": { "name": "func-ai-agents-dashboard-prod", "tier": "Premium", "size": "EP1" },
+          "eventHub": { "name": "evh-ai-agents-dashboard-prod", "tier": "Standard" },
+          "storage": { "name": "staiagentsdashboardprod", "type": "Azure Data Lake Gen2", "tier": "Standard_LRS" },
+          "streamAnalytics": { "name": "asa-ai-agents-dashboard-prod", "tier": "Standard" }
         }
       },
       {
@@ -191,9 +206,35 @@
         "region": "westus2",
         "resourceGroup": "rg-mvp-prod",
         "components": {
-          "appService": { "name": "app-mvp-prod", "tier": "Standard", "size": "S2" },
-          "database": { "name": "sql-mvp-prod", "type": "Azure SQL", "tier": "Standard", "size": "S1" },
-          "storage": { "name": "stmvpprod", "type": "Azure Blob Storage", "tier": "Standard_LRS" }
+          "appService": { "name": "app-mvp-prod", "tier": "Premium", "size": "P2v2" },
+          "database": { "name": "sql-mvp-prod", "type": "Azure SQL", "tier": "Premium", "size": "P1" },
+          "redis": { "name": "redis-mvp-prod", "tier": "Premium", "size": "P1" },
+          "applicationGateway": { "name": "agw-mvp-prod", "tier": "Standard_v2" }
+        }
+      },
+      {
+        "id": "app-011",
+        "applicationName": "tag-accelerator",
+        "cloud": "Azure",
+        "region": "eastus",
+        "resourceGroup": "rg-tag-accelerator-prod",
+        "components": {
+          "appService": { "name": "app-tag-accelerator-prod", "tier": "Premium", "size": "P1v3" },
+          "database": { "name": "cosmos-tag-accelerator-prod", "type": "CosmosDB", "tier": "Standard" },
+          "serviceBus": { "name": "sb-tag-accelerator-prod", "tier": "Standard" },
+          "keyVault": { "name": "kv-tag-accelerator-prod", "tier": "Standard" }
+        }
+      },
+      {
+        "id": "app-012",
+        "applicationName": "domain-bot",
+        "cloud": "Azure",
+        "region": "westeurope",
+        "resourceGroup": "rg-domain-bot-prod",
+        "components": {
+          "appService": { "name": "app-domain-bot-prod", "tier": "Standard", "size": "S2" },
+          "database": { "name": "mysql-domain-bot-prod", "type": "MySQL", "tier": "GeneralPurpose", "size": "GP_Gen5_2" },
+          "cdn": { "name": "cdn-domain-bot-prod", "tier": "Standard_Akamai" }
         }
       }
     ]
