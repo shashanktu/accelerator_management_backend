@@ -2,27 +2,27 @@
   "applicationDetails": {
     "applications": [
       {
-        "applicationName": "ado-to-github-accelerator",
-        "displayName": "ADO to Github Accelerator",
+        "applicationName": "ado-to-github",
+        "displayName": "ADO to Github",
         "type": "accelerator",
         "description": "Migration accelerator for Azure DevOps to GitHub transitions",
         "version": "1.0.0",
         "status": "active",
         "owner": "DevOps Team",
         "maintainer": "devops.team@company.com",
-        "applicationUrl": "https://ado-github-accelerator.company.com",
+        "applicationUrl": "https://ado-to-github.company.com",
         "tags": ["Migration", "DevOps", "GitHub", "Azure DevOps"]
       },
       {
-        "applicationName": "environment-provisioning-bot",
-        "displayName": "Environment Provisioning Bot",
+        "applicationName": "environment-provisioning",
+        "displayName": "Environment Provisioning",
         "type": "bot",
         "description": "Automated environment provisioning and infrastructure management",
         "version": "1.2.0",
         "status": "active",
         "owner": "Infrastructure Team",
         "maintainer": "infra.team@company.com",
-        "applicationUrl": "https://env-provisioning-bot.company.com",
+        "applicationUrl": "https://environment-provisioning.company.com",
         "tags": ["Infrastructure", "Provisioning", "Automation"]
       },
       {
@@ -50,15 +50,15 @@
         "tags": ["RSS", "Content", "Distribution"]
       },
       {
-        "applicationName": "tsc-dashboard",
-        "displayName": "Dashboard TSC - Solutions",
+        "applicationName": "dashboard",
+        "displayName": "Dashboard",
         "type": "tsc-solutions",
         "description": "Comprehensive solutions dashboard and analytics platform",
         "version": "1.8.0",
         "status": "active",
         "owner": "TSC Team",
         "maintainer": "tsc.team@company.com",
-        "applicationUrl": "https://tsc-dashboard.company.com",
+        "applicationUrl": "https://dashboard.company.com",
         "tags": ["Dashboard", "Analytics", "Solutions"]
       },
       {
@@ -86,15 +86,15 @@
         "tags": ["Interview", "HR", "Assessment"]
       },
       {
-        "applicationName": "uw-workbench-accelerator",
-        "displayName": "UW WorkBench Accelerator",
+        "applicationName": "uw-workbench",
+        "displayName": "UW WorkBench",
         "type": "accelerator",
         "description": "University workbench development and deployment accelerator",
         "version": "1.0.3",
         "status": "active",
         "owner": "Education Team",
         "maintainer": "edu.team@company.com",
-        "applicationUrl": "https://uw-workbench-accelerator.company.com",
+        "applicationUrl": "https://uw-workbench.company.com",
         "tags": ["Education", "Workbench", "Development"]
       },
       {
@@ -110,15 +110,15 @@
         "tags": ["AI", "Agents", "Dashboard"]
       },
       {
-        "applicationName": "mvp-accelerator",
-        "displayName": "MVP Accelerator",
+        "applicationName": "mvp",
+        "displayName": "MVP",
         "type": "accelerator",
         "description": "Minimum viable product development accelerator",
         "version": "1.5.0",
         "status": "active",
         "owner": "Product Team",
         "maintainer": "product.team@company.com",
-        "applicationUrl": "https://mvp-accelerator.company.com",
+        "applicationUrl": "https://mvp.company.com",
         "tags": ["MVP", "Product", "Development"]
       },
       {
@@ -270,8 +270,8 @@
   "devopsDetails": {
     "applications": [
       {
-        "applicationName": "ado-to-github-accelerator",
-        "repositoryUrl": "https://github.com/org/ado-to-github-accelerator",
+        "applicationName": "ado-to-github",
+        "repositoryUrl": "https://github.com/org/ado-to-github",
         "cicdPipeline": {
           "provider": "GitHub Actions",
           "buildPipeline": "ado-github-ci",
@@ -290,8 +290,8 @@
         }
       },
       {
-        "applicationName": "environment-provisioning-bot",
-        "repositoryUrl": "https://github.com/org/environment-provisioning-bot",
+        "applicationName": "environment-provisioning",
+        "repositoryUrl": "https://github.com/org/environment-provisioning",
         "cicdPipeline": {
           "provider": "Azure DevOps",
           "buildPipeline": "env-provisioning-build",

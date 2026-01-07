@@ -2,14 +2,14 @@
   "applications": [
     {
       "id": "app-001",
-      "applicationName": "ado-to-github-accelerator",
+      "applicationName": "ado-to-github",
       "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/ado-to-github-accelerator",
+        "repositoryUrl": "https://github.com/org/ado-to-github",
         "provider": "GitHub Actions",
         "buildPipeline": "ado-github-ci",
-        "buildPipelineUrl": "https://github.com/org/ado-to-github-accelerator/actions",
+        "buildPipelineUrl": "https://github.com/org/ado-to-github/actions",
         "releasePipeline": "ado-github-cd",
-        "releasePipelineUrl": "https://github.com/org/ado-to-github-accelerator/actions",
+        "releasePipelineUrl": "https://github.com/org/ado-to-github/actions",
         "deploymentStrategy": "blue-green"
       },
       "codeQuality": {
@@ -25,14 +25,14 @@
     },
     {
       "id": "app-002",
-      "applicationName": "environment-provisioning-bot",
+      "applicationName": "environment-provisioning",
       "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/environment-provisioning-bot",
+        "repositoryUrl": "https://github.com/org/environment-provisioning",
         "provider": "Azure DevOps",
         "buildPipeline": "env-provisioning-build",
-        "buildPipelineUrl": "https://dev.azure.com/org/environment-provisioning-bot/_build",
+        "buildPipelineUrl": "https://dev.azure.com/org/environment-provisioning/_build",
         "releasePipeline": "env-provisioning-release",
-        "releasePipelineUrl": "https://dev.azure.com/org/environment-provisioning-bot/_release",
+        "releasePipelineUrl": "https://dev.azure.com/org/environment-provisioning/_release",
         "deploymentStrategy": "rolling"
       },
       "codeQuality": {
@@ -94,14 +94,14 @@
     },
     {
       "id": "app-005",
-      "applicationName": "tsc-dashboard",
+      "applicationName": "dashboard",
       "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/tsc-dashboard",
+        "repositoryUrl": "https://github.com/org/dashboard",
         "provider": "GitHub Actions",
-        "buildPipeline": "tsc-dashboard-ci",
-        "buildPipelineUrl": "https://github.com/org/tsc-dashboard/actions",
-        "releasePipeline": "tsc-dashboard-cd",
-        "releasePipelineUrl": "https://github.com/org/tsc-dashboard/actions",
+        "buildPipeline": "dashboard-ci",
+        "buildPipelineUrl": "https://github.com/org/dashboard/actions",
+        "releasePipeline": "dashboard-cd",
+        "releasePipelineUrl": "https://github.com/org/dashboard/actions",
         "deploymentStrategy": "blue-green"
       },
       "codeQuality": {
@@ -111,7 +111,7 @@
       },
       "monitoring": {
         "applicationInsights": "e5f6g7h8-i9j0-1234-5678-901234efghij",
-        "logAnalytics": "workspace-tsc-dashboard",
+        "logAnalytics": "workspace-dashboard",
         "alerts": ["dashboard-performance", "data-accuracy"]
       }
     },
@@ -163,9 +163,9 @@
     },
     {
       "id": "app-008",
-      "applicationName": "uw-workbench-accelerator",
+      "applicationName": "uw-workbench",
       "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/uw-workbench-accelerator",
+        "repositoryUrl": "https://github.com/org/uw-workbench",
         "provider": "Jenkins",
         "buildPipeline": "uw-workbench-build",
         "buildPipelineUrl": "https://jenkins.org/job/uw-workbench-build",
@@ -209,14 +209,14 @@
     },
     {
       "id": "app-010",
-      "applicationName": "mvp-accelerator",
+      "applicationName": "mvp",
       "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/mvp-accelerator",
+        "repositoryUrl": "https://github.com/org/mvp",
         "provider": "GitHub Actions",
-        "buildPipeline": "mvp-accelerator-ci",
-        "buildPipelineUrl": "https://github.com/org/mvp-accelerator/actions",
-        "releasePipeline": "mvp-accelerator-cd",
-        "releasePipelineUrl": "https://github.com/org/mvp-accelerator/actions",
+        "buildPipeline": "mvp-ci",
+        "buildPipelineUrl": "https://github.com/org/mvp/actions",
+        "releasePipeline": "mvp-cd",
+        "releasePipelineUrl": "https://github.com/org/mvp/actions",
         "deploymentStrategy": "rolling"
       },
       "codeQuality": {
@@ -226,7 +226,7 @@
       },
       "monitoring": {
         "applicationInsights": "j0k1l2m3-n4o5-6789-0123-456789jklmno",
-        "logAnalytics": "workspace-mvp-accelerator",
+        "logAnalytics": "workspace-mvp",
         "alerts": ["deployment-success", "feature-adoption"]
       }
     }
