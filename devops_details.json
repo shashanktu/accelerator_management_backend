@@ -119,13 +119,13 @@
       "id": "app-006",
       "applicationName": "resume-analyzer",
       "cicdPipeline": {
-        "repositoryUrl": "https://github.com/org/resume-analyzer",
+        "repositoryUrl": "https://github.com/CloudTSC/ResumeAnalyzer",
         "provider": "Azure DevOps",
         "buildPipeline": "resume-analyzer-build",
-        "buildPipelineUrl": "https://dev.azure.com/org/resume-analyzer/_build",
+        "buildPipelineUrl": "https://github.com/CloudTSC/ResumeAnalyzer/actions/runs/20596187948",
         "releasePipeline": "resume-analyzer-release",
-        "releasePipelineUrl": "https://dev.azure.com/org/resume-analyzer/_release",
-        "deploymentStrategy": "canary"
+        "releasePipelineUrl": "https://dev.azure.com/CloudTSC/ResumeAnalyzer/_release",
+        "deploymentStrategy": "blue-green"
       },
       "codeQuality": {
         "sonarQube": "enabled",
