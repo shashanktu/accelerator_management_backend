@@ -445,6 +445,6 @@ def get_complete_profile(identifier: str, environment: Optional[str] = "producti
 def root():
     return {"message": "Welcome to the Application Management API"}
 
-@app.get('/hello')
-def hello():
-    return {"message": "Hello, World!"}
+# Export the app for Vercel
+app = app
+
