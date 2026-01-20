@@ -3,6 +3,8 @@ import json
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional, List
 from pydantic import BaseModel
+import requests
+from datetime import datetime, timedelta
 
 app = FastAPI(title="Bots Dashboard API", version="1.0.0")
 
@@ -97,6 +99,30 @@ def generate_next_id(applications: list) -> str:
                 continue
     
     return f"app-{max_id + 1:03d}"
+
+def get_azure_resource_group_cost(subscription_id: str, resource_group: str) -> dict:
+    """Mock function to simulate Azure Cost Management API call"""
+    try:
+        # Mock cost data - in production, replace with actual Azure Cost Management API
+        mock_costs = {
+            "totalCost": round(150.75 + hash(resource_group) % 500, 2),
+            "currency": "USD",
+            "billingPeriod": "Current Month",
+            "lastUpdated": datetime.now().isoformat(),
+            "breakdown": {
+                "compute": round(80.25 + hash(resource_group) % 200, 2),
+                "storage": round(25.50 + hash(resource_group) % 50, 2),
+                "networking": round(15.00 + hash(resource_group) % 30, 2),
+                "database": round(30.00 + hash(resource_group) % 100, 2)
+            }
+        }
+        return mock_costs
+    except Exception as e:
+        return {
+            "error": f"Failed to fetch cost data: {str(e)}",
+            "totalCost": 0,
+            "currency": "USD"
+        }
 
 @app.get("/")
 def read_root():
@@ -347,6 +373,12 @@ def get_app_infrastructure_all_environments(identifier: str):
     for env_name, env_apps in data["environments"].items():
         app = find_app_by_id_or_name(env_apps, identifier)
         if app:
+            # Add cost information for each environment
+            cost_data = get_azure_resource_group_cost(
+                app.get("subscriptionId", ""), 
+                app.get("resourceGroup", "")
+            )
+            app["costDetails"] = cost_data
             result[env_name] = app
     
     if not result:

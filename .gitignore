@@ -1,1 +1,3 @@
-__pycache__/
+#ignore whole __pycache__ directory
+
+__pycache__/*
