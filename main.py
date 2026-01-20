@@ -444,3 +444,7 @@ def get_complete_profile(identifier: str, environment: Optional[str] = "producti
 @app.get('/')
 def root():
     return {"message": "Welcome to the Application Management API"}
+
+@app.get('/hello')
+def hello():
+    return {"message": "Hello, World!"}
