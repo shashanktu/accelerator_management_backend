@@ -124,6 +124,26 @@ def get_azure_resource_group_cost(subscription_id: str, resource_group: str) -> 
             "currency": "USD"
         }
 
+def manage_azure_services(subscription_id: str, resource_group: str, action: str) -> dict:
+    """Mock function to simulate Azure service start/stop operations"""
+    try:
+        # Mock service management - in production, replace with actual Azure Management API
+        services_affected = ["App Service", "Database", "Storage", "Load Balancer"]
+        return {
+            "action": action,
+            "resourceGroup": resource_group,
+            "servicesAffected": services_affected,
+            "status": "success",
+            "timestamp": datetime.now().isoformat(),
+            "message": f"Successfully {action}ed services in {resource_group}"
+        }
+    except Exception as e:
+        return {
+            "action": action,
+            "status": "error",
+            "message": f"Failed to {action} services: {str(e)}"
+        }
+
 @app.get("/")
 def read_root():
     return {"message": "Bots Dashboard API", "version": "1.0.0"}
@@ -444,6 +464,65 @@ def get_complete_profile(identifier: str, environment: Optional[str] = "producti
 @app.get('/')
 def root():
     return {"message": "Welcome to the Application Management API"}
+
+# Start/Stop application services
+@app.post("/services/{application_name}/{action}")
+def manage_application_services(application_name: str, action: str, environment: Optional[str] = "production"):
+    if action not in ["start", "stop"]:
+        raise HTTPException(status_code=400, detail="Action must be 'start' or 'stop'")
+    
+    # Get application details
+    app_data = load_json_file("application_details.json")
+    app = find_app_by_id_or_name(app_data["applications"], application_name)
+    if not app:
+        raise HTTPException(status_code=404, detail="Application not found")
+    
+    # Get infrastructure details
+    infra_data = load_json_file("infrastructure_details.json")
+    if environment not in infra_data["environments"]:
+        raise HTTPException(status_code=404, detail=f"Environment '{environment}' not found")
+    
+    infra_app = find_app_by_id_or_name(infra_data["environments"][environment], application_name)
+    if not infra_app:
+        raise HTTPException(status_code=404, detail=f"Infrastructure not found for '{application_name}' in '{environment}'")
+    
+    # Manage Azure services
+    service_result = manage_azure_services(
+        infra_app.get("subscriptionId", ""),
+        infra_app.get("resourceGroup", ""),
+        action
+    )
+    
+    # Update application status in both application_details.json and applications.json
+    new_status = "active" if action == "start" else "inactive"
+    
+    # Update application_details.json
+    for i, application in enumerate(app_data["applications"]):
+        if application.get("id") == app["id"] or application.get("applicationName") == application_name:
+            app_data["applications"][i]["status"] = new_status
+            break
+    
+    # Save updated application data
+    save_json_file("application_details.json", app_data)
+    
+    # Update applications.json as well
+    try:
+        main_app_data = load_json_file("applications.json")
+        for application in main_app_data["applicationDetails"]["applications"]:
+            if application.get("applicationName") == application_name:
+                application["status"] = new_status
+                break
+        save_json_file("applications.json", main_app_data)
+    except Exception as e:
+        pass  # Continue if applications.json doesn't exist
+    
+    return {
+        "message": f"Application '{application_name}' services {action}ed successfully",
+        "applicationName": application_name,
+        "environment": environment,
+        "newStatus": new_status,
+        "serviceManagement": service_result
+    }
 
 # Export the app for Vercel
 app = app

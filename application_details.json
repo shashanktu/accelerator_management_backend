@@ -11,7 +11,12 @@
       "owner": "DevOps Team",
       "maintainer": "devops.team@company.com",
       "applicationUrl": "https://ado-to-github.company.com",
-      "tags": ["Migration", "DevOps", "GitHub", "Azure DevOps"]
+      "tags": [
+        "Migration",
+        "DevOps",
+        "GitHub",
+        "Azure DevOps"
+      ]
     },
     {
       "id": "app-002",
@@ -24,7 +29,11 @@
       "owner": "Infrastructure Team",
       "maintainer": "infra.team@company.com",
       "applicationUrl": "https://environment-provisioning.company.com",
-      "tags": ["Infrastructure", "Provisioning", "Automation"]
+      "tags": [
+        "Infrastructure",
+        "Provisioning",
+        "Automation"
+      ]
     },
     {
       "id": "app-003",
@@ -37,7 +46,11 @@
       "owner": "Operations Team",
       "maintainer": "ops.team@company.com",
       "applicationUrl": "https://diagnostics-bot.company.com",
-      "tags": ["Diagnostics", "Troubleshooting", "Monitoring"]
+      "tags": [
+        "Diagnostics",
+        "Troubleshooting",
+        "Monitoring"
+      ]
     },
     {
       "id": "app-004",
@@ -50,7 +63,11 @@
       "owner": "TSC Team",
       "maintainer": "tsc.team@company.com",
       "applicationUrl": "https://tsc-weeklybyte-rss.company.com",
-      "tags": ["RSS", "Content", "Distribution"]
+      "tags": [
+        "RSS",
+        "Content",
+        "Distribution"
+      ]
     },
     {
       "id": "app-005",
@@ -63,7 +80,11 @@
       "owner": "TSC Team",
       "maintainer": "tsc.team@company.com",
       "applicationUrl": "https://dashboard.company.com",
-      "tags": ["Dashboard", "Analytics", "Solutions"]
+      "tags": [
+        "Dashboard",
+        "Analytics",
+        "Solutions"
+      ]
     },
     {
       "id": "app-006",
@@ -72,11 +93,16 @@
       "type": "tsc-solutions",
       "description": "AI-powered resume analysis and candidate matching system",
       "version": "2.1.0",
-      "status": "active",
+      "status": "inactive",
       "owner": "TSC Team",
       "maintainer": "tsc.team@company.com",
       "applicationUrl": "https://resume-analyzer.company.com",
-      "tags": ["AI", "NLP", "HR", "Analytics"]
+      "tags": [
+        "AI",
+        "NLP",
+        "HR",
+        "Analytics"
+      ]
     },
     {
       "id": "app-007",
@@ -89,7 +115,11 @@
       "owner": "HR Team",
       "maintainer": "hr.team@company.com",
       "applicationUrl": "https://interview-bot.company.com",
-      "tags": ["Interview", "HR", "Assessment"]
+      "tags": [
+        "Interview",
+        "HR",
+        "Assessment"
+      ]
     },
     {
       "id": "app-008",
@@ -102,7 +132,11 @@
       "owner": "Education Team",
       "maintainer": "edu.team@company.com",
       "applicationUrl": "https://uw-workbench.company.com",
-      "tags": ["Education", "Workbench", "Development"]
+      "tags": [
+        "Education",
+        "Workbench",
+        "Development"
+      ]
     },
     {
       "id": "app-009",
@@ -115,7 +149,11 @@
       "owner": "AI Team",
       "maintainer": "ai.team@company.com",
       "applicationUrl": "https://ai-agents-dashboard.company.com",
-      "tags": ["AI", "Agents", "Dashboard"]
+      "tags": [
+        "AI",
+        "Agents",
+        "Dashboard"
+      ]
     },
     {
       "id": "app-010",
@@ -128,7 +166,11 @@
       "owner": "Product Team",
       "maintainer": "product.team@company.com",
       "applicationUrl": "https://mvp.company.com",
-      "tags": ["MVP", "Product", "Development"]
+      "tags": [
+        "MVP",
+        "Product",
+        "Development"
+      ]
     },
     {
       "id": "app-011",
@@ -141,7 +183,11 @@
       "owner": "Platform Team",
       "maintainer": "platform.team@company.com",
       "applicationUrl": "https://tag-accelerator.company.com",
-      "tags": ["Event Processing", "Analytics", "Real-time"]
+      "tags": [
+        "Event Processing",
+        "Analytics",
+        "Real-time"
+      ]
     },
     {
       "id": "app-012",
@@ -154,7 +200,11 @@
       "owner": "Infrastructure Team",
       "maintainer": "infra.team@company.com",
       "applicationUrl": "https://domain-bot.company.com",
-      "tags": ["Domain", "DNS", "Management"]
+      "tags": [
+        "Domain",
+        "DNS",
+        "Management"
+      ]
     },
     {
       "id": "app-013",
@@ -167,7 +217,11 @@
       "owner": "HR Team",
       "maintainer": "hr.team@company.com",
       "applicationUrl": "https://hr-bot-vimi.company.com",
-      "tags": ["HR", "Virtual Assistant", "Employee Management"]
+      "tags": [
+        "HR",
+        "Virtual Assistant",
+        "Employee Management"
+      ]
     },
     {
       "id": "app-014",
@@ -180,7 +234,11 @@
       "owner": "Operations Team",
       "maintainer": "ops.team@company.com",
       "applicationUrl": "https://ops-bot.company.com",
-      "tags": ["Operations", "Automation", "Incident Management"]
+      "tags": [
+        "Operations",
+        "Automation",
+        "Incident Management"
+      ]
     },
     {
       "id": "app-015",
@@ -193,7 +251,11 @@
       "owner": "TSC Team",
       "maintainer": "tsc.team@company.com",
       "applicationUrl": "https://ba-agent.company.com",
-      "tags": ["Business Analysis", "Requirements", "Agent"]
+      "tags": [
+        "Business Analysis",
+        "Requirements",
+        "Agent"
+      ]
     },
     {
       "id": "app-016",
@@ -206,7 +268,11 @@
       "owner": "TSC Team",
       "maintainer": "tsc.team@company.com",
       "applicationUrl": "https://digital-studio.company.com",
-      "tags": ["Digital", "Content", "Studio"]
+      "tags": [
+        "Digital",
+        "Content",
+        "Studio"
+      ]
     },
     {
       "id": "app-017",
@@ -219,7 +285,11 @@
       "owner": "HR Team",
       "maintainer": "hr.team@company.com",
       "applicationUrl": "https://bench-management-tool.company.com",
-      "tags": ["Bench Management", "HR", "Allocation"]
+      "tags": [
+        "Bench Management",
+        "HR",
+        "Allocation"
+      ]
     },
     {
       "id": "app-018",
@@ -232,7 +302,11 @@
       "owner": "DevOps Team",
       "maintainer": "devops.team@company.com",
       "applicationUrl": "https://github-copilot-iac.company.com",
-      "tags": ["IaC", "GitHub Copilot", "Automation"]
+      "tags": [
+        "IaC",
+        "GitHub Copilot",
+        "Automation"
+      ]
     },
     {
       "id": "app-019",
@@ -245,7 +319,11 @@
       "owner": "HR Team",
       "maintainer": "hr.team@company.com",
       "applicationUrl": "https://hr-document-verification.company.com",
-      "tags": ["Document Verification", "HR", "Validation"]
+      "tags": [
+        "Document Verification",
+        "HR",
+        "Validation"
+      ]
     },
     {
       "id": "app-020",
@@ -258,7 +336,11 @@
       "owner": "Compliance Team",
       "maintainer": "compliance.team@company.com",
       "applicationUrl": "https://kyc-virtual-assistant.company.com",
-      "tags": ["KYC", "Compliance", "Virtual Assistant"]
+      "tags": [
+        "KYC",
+        "Compliance",
+        "Virtual Assistant"
+      ]
     },
     {
       "id": "app-021",
@@ -271,7 +353,11 @@
       "owner": "TSC Team",
       "maintainer": "tsc.team@company.com",
       "applicationUrl": "https://boilerplate-automation.company.com",
-      "tags": ["Boilerplate", "Code Generation", "Templates"]
+      "tags": [
+        "Boilerplate",
+        "Code Generation",
+        "Templates"
+      ]
     },
     {
       "id": "app-022",
@@ -284,7 +370,11 @@
       "owner": "Platform Team",
       "maintainer": "platform.team@company.com",
       "applicationUrl": "https://backstage-idp.company.com",
-      "tags": ["IDP", "Backstage", "Developer Platform"]
+      "tags": [
+        "IDP",
+        "Backstage",
+        "Developer Platform"
+      ]
     }
   ]
 }
