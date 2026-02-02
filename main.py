@@ -5,8 +5,6 @@ from typing import Optional, List
 from pydantic import BaseModel
 import requests
 from datetime import datetime, timedelta
-import psycopg2
-import json
 
 from sql import get_all_applications,insert_application,get_application_by_id,get_devops_by_id,insert_devops_details,get_infrastructure_by_id,get_infra_components_by_env_and_component
 
