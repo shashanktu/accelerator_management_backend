@@ -1,4 +1,4 @@
-from main import app
+from sample import app
 
 # Vercel serverless function handler
 def handler(request, response):
